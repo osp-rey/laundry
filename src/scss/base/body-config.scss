@@ -1,0 +1,11 @@
+.body-hidden {
+  overflow: hidden;
+  touch-action: none;
+}
+.body {
+  font-family: "Onest", sans-serif;
+  font-size: 16px;
+  color: var(--black);
+  background-color: white;
+  letter-spacing: -0.01em;
+}

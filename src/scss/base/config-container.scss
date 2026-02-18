@@ -1,0 +1,12 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  @include tablet {
+    padding: 0 16px;
+  }
+}

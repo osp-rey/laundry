@@ -1,0 +1,130 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.header {
+  padding: 14px 0px;
+  @include tablet {
+    padding: 5px 0px;
+  }
+
+  &__wrapper {
+    @include flex-between;
+    gap: 30px;
+  }
+  &__logo {
+    display: block;
+    width: 240px;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+
+    @include tablet {
+      width: 150px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__contacts {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 500;
+    gap: 40px;
+    @include laptop-middle {
+      gap: 30px;
+    }
+    @include laptop-min {
+      display: none;
+    }
+  }
+  &__contacts-main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    a {
+      transition: color 0.3s ease;
+      @include hover {
+        color: var(--primary);
+      }
+    }
+  }
+  &__contacts-item {
+  }
+  &__tel {
+    padding-left: 20px;
+    @include laptop-middle {
+      padding-left: 0;
+    }
+  }
+  &__tel-title {
+    margin-bottom: 4px;
+  }
+  &__tel-btn {
+    color: var(--primary);
+    transition: color 0.3s ease;
+    @include hover {
+      color: var(--primary-d);
+    }
+  }
+  &__btn {
+    width: 215px;
+    flex-shrink: 0;
+  }
+  &__mob-buttons {
+    display: flex;
+    gap: 16px;
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+  &__mob-btn {
+    @include flex-center;
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    background-color: var(--primary-l);
+    -webkit-tap-highlight-color: transparent;
+
+    color: var(--primary);
+
+    &._burger {
+      flex-direction: column;
+      gap: 5px;
+
+      &._active {
+        position: relative;
+
+        div {
+          position: absolute;
+          &:nth-child(1) {
+            transform: rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+
+      div {
+        width: 25px;
+        height: 3px;
+        border-radius: 1px;
+        background-color: currentColor;
+
+        transition:
+          transform 0.3s ease,
+          opacity 0.3s ease;
+      }
+    }
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
