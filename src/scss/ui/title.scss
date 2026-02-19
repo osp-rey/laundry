@@ -1,6 +1,27 @@
-@use '../base/templates' as *;
-@use '../base/media' as *;
+@use "../base/templates" as *;
+@use "../base/media" as *;
 
+.m-title {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  margin: 0;
+
+  @include laptop-middle {
+    font-size: 48px;
+  }
+  @include laptop-min {
+    font-size: 44px;
+  }
+  @include tablet {
+    font-size: 36px;
+  }
+
+  span {
+    color: var(--primary);
+  }
+}
 .t-title {
   font-weight: 600;
   font-size: 48px;

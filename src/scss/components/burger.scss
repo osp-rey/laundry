@@ -1,0 +1,145 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.burger {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 100svh;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 79px 16px 20px 16px;
+  background-color: white;
+  z-index: 100;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
+
+  @media (min-width: 992px) {
+    display: none;
+  }
+  @include tablet {
+    padding-top: 66px;
+  }
+
+  &._open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 30px 18px;
+    background-color: var(--primary-f);
+    border-radius: 30px;
+  }
+  &__wrapper-menu {
+    display: none;
+    opacity: 0;
+
+    transition: opacity 0.4s ease;
+
+    &._active {
+      display: block;
+    }
+    &._show {
+      opacity: 1;
+    }
+  }
+  &__prev-btn {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-left: 10px;
+    width: fit-content;
+    margin-bottom: 20px;
+
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--primary);
+
+    svg {
+      flex-shrink: 0;
+      width: 7px;
+      height: 12px;
+    }
+    span {
+      position: relative;
+      padding-left: 25px;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        left: 0;
+        top: -2px;
+        bottom: -2px;
+        background-color: currentColor;
+        opacity: 0.3;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 30px;
+
+    font-weight: 500;
+    font-size: 20px;
+
+    .menu-item-has-children {
+      @include flex-between;
+
+      .btn {
+        position: relative;
+        width: 48px;
+        height: 24px;
+        border-left: 1px solid rgba(51, 51, 51, 0.3);
+        background: url("@img/next.svg") center / 9px auto no-repeat;
+
+        &::before {
+          position: absolute;
+          content: "";
+          top: -12px;
+          left: 0;
+          right: 0;
+          bottom: -12px;
+        }
+      }
+      .sub-menu {
+        display: none;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: auto;
+  }
+  &__info-item {
+    display: block;
+    width: fit-content;
+    font-weight: 500;
+    color: var(--primary);
+    opacity: 0.8;
+  }
+  &__buttons {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+
+    .btn-s {
+      width: 100%;
+    }
+  }
+}

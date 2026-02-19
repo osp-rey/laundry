@@ -3,7 +3,7 @@
 
 .fancybox__backdrop {
   background-color: var(--gray-l);
-  opacity: 0.8;
+  opacity: 0.8 !important;
 }
 .modal {
   display: none;

@@ -12,10 +12,12 @@
 @use "./ui/title";
 @use "./ui/modal";
 @use "./ui/input";
+@use "./ui/text";
 
 // components
 @use "./components/header";
 
 @use "./components/s-hero";
+@use "./components/burger";
 
 @use "./components/footer";

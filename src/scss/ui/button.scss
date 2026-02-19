@@ -33,4 +33,15 @@
     border: 1px solid var(--border-h);
     color: var(--color-h);
   }
+
+  &._white {
+    --background: white;
+    --border: white;
+    --color: var(--primary);
+    --background-h: var(--gray-l);
+    --border-h: var(--gray-l);
+    --color-h: var(--primary);
+
+    box-shadow: 2px -1px 7px 2px rgba(25, 142, 223, 0.1);
+  }
 }
