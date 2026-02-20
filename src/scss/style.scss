@@ -13,11 +13,17 @@
 @use "./ui/modal";
 @use "./ui/input";
 @use "./ui/text";
+@use "./ui/sect";
+@use "./ui/grid-layout";
+@use "./ui/card-service";
+@use "./ui/card-offer";
 
 // components
 @use "./components/header";
 
 @use "./components/s-hero";
 @use "./components/burger";
+@use "./components/s-services";
+@use "./components/s-offer";
 
 @use "./components/footer";

@@ -1,5 +1,5 @@
-@use '../base/templates' as *;
-@use '../base/media' as *;
+@use "../base/templates" as *;
+@use "../base/media" as *;
 
 .s-hero {
   &__body {
@@ -18,7 +18,8 @@
       min-height: 660px;
     }
 
-    &::before, &::after {
+    &::before,
+    &::after {
       position: absolute;
       content: "";
       border-radius: 100%;
@@ -26,7 +27,11 @@
     }
     &::after {
       width: 1230px;
-      background: radial-gradient(50% 50% at 50% 50%, rgb(156, 213, 242) 33.711539%, rgba(255, 255, 255, 0) 100%);
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgb(156, 213, 242) 33.711539%,
+        rgba(255, 255, 255, 0) 100%
+      );
       right: -400px;
       bottom: -700px;
       z-index: -3;
@@ -38,7 +43,11 @@
     }
     &::before {
       width: 1130px;
-      background: radial-gradient(50% 50% at 50% 50%, rgb(156, 213, 242) 31.730768084526062%, rgba(255, 255, 255, 0) 100%);
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgb(156, 213, 242) 31.730768084526062%,
+        rgba(255, 255, 255, 0) 100%
+      );
       top: 0;
       right: 15px;
       z-index: -2;
@@ -95,6 +104,62 @@
     img {
       display: block;
       width: 100%;
+    }
+  }
+  &__adv {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: var(--primary-m);
+    border-radius: 30px;
+    margin-top: 20px;
+
+    @include laptop-middle {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include tablet {
+      margin-top: 80px;
+      padding: 20px;
+      gap: 15px;
+    }
+    @include tablet-min {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__adv-item {
+    padding: 25px;
+    border-radius: 30px;
+    background-color: white;
+
+    font-weight: 500;
+    font-size: 20px;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 16px 25px;
+      border-radius: 20px;
+
+      br {
+        display: none;
+      }
+    }
+    @include tablet-min {
+      min-height: 60px;
+    }
+
+    .icon {
+      display: block;
+      margin-bottom: 10px;
+      flex-shrink: 0;
+
+      @include tablet {
+        width: 25px;
+        margin: 0;
+      }
     }
   }
 }

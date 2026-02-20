@@ -1,4 +1,6 @@
-<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 18 18" fill="none" id="icon-close" xmlns="http://www.w3.org/2000/svg">
+<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 14 14" fill="none" id="icon-arrow-next" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.23979 7.07309L2.23006 5.98492L8.75931 5.98492L5.73998 2.99247L6.5057 2.21987L10.8535 6.52901L6.58276 10.8381L5.80323 10.0655L8.76904 7.07309L2.23979 7.07309Z" fill="currentColor"/>
+</symbol><symbol viewBox="0 0 18 18" fill="none" id="icon-close" xmlns="http://www.w3.org/2000/svg">
 <rect x="1.9082" width="22.4829" height="2.69794" rx="1" transform="rotate(45 1.9082 0)" fill="currentColor"/>
 <rect x="0.188477" y="15.916" width="22.4829" height="2.69794" rx="1" transform="rotate(-45 0.188477 15.916)" fill="currentColor"/>
 </symbol><symbol viewBox="0 0 6 9" fill="none" id="icon-prev" xmlns="http://www.w3.org/2000/svg">

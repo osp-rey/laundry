@@ -1,0 +1,12 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+
+  @include laptop-middle {
+    grid-template-columns: 1fr;
+  }
+}
