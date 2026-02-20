@@ -1,0 +1,568 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Чисто`PROFF</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap&_v=20260221024950" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20260221024950">
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20260221024950">
+	<link rel="stylesheet" href="css/style.min.css?_v=20260221024950" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a href="/" class="header__logo">
+					<img src="img/logo.svg" alt="logo" />
+				</a>
+				<div class="header__contacts">
+					<div class="header__contacts-main">
+						<div class="header__contacts-item">Пн-Пт: с 09.00 до 21.00</div>
+						<a href="#" target="_blank" class="header__contacts-item">
+							г. Ессентуки, ул. Пятигорская, 149
+						</a>
+					</div>
+					<div class="header__tel">
+						<div class="header__tel-title">Заказать звонок</div>
+						<a href="tel:+79255550126" class="header__tel-btn">
+							+7 (925) 555-01-26
+						</a>
+					</div>
+					<a href="#modal-feedback" data-fancybox data-target-note="#input-modal-feedback" data-note="Получить КП" class="btn-s header__btn">
+						Получить КП
+					</a>
+				</div>
+				<div class="header__mob-buttons">
+					<a href="tel:+79255550126" class="header__mob-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+						</svg>
+					</a>
+					<div class="header__mob-btn _burger" id="burger-toggle">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="header-b">
+		<div class="container">
+			<nav class="header-b__nav">
+				<ul class="list header-b__list">
+					<li class="menu-item-has-children">
+						<a href="#">Услуги</a>
+						<ul class="sub-menu">
+							<li><a href="#">Прямое бельё</a></li>
+							<li><a href="#">Махра</a></li>
+							<li><a href="#">Ресторанный текстиль </a></li>
+							<li><a href="#">Униформа</a></li>
+							<li><a href="#">MED/SPA SAFE</a></li>
+						</ul>
+					</li>
+					<li class="menu-item-has-children">
+						<a href="#">Решения по отраслям</a>
+						<ul class="sub-menu">
+							<li><a href="#">Прямое бельё</a></li>
+							<li><a href="#">Махра</a></li>
+							<li><a href="#">Ресторанный текстиль </a></li>
+							<li><a href="#">Униформа</a></li>
+							<li><a href="#">MED/SPA SAFE</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Тестовая партия</a></li>
+					<li><a href="#">Логистика</a></li>
+					<li><a href="#">Партнерство</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<aside>
+		<div class="modal" id="modal-feedback">
+			<div class="modal__inside">
+				<div class="modal__wrapper">
+					<div class="modal__close" data-fancybox-close>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+					</div>
+					<img src="img/modal-img.jpg" alt="image" class="modal__img" />
+					<div class="modal__body">
+						<div class="t-title modal__title">Оставьте ваши данные</div>
+						<form action="#" class="modal__form">
+							<div style="display: none;">
+								<input type="text" id="input-modal-feedback">
+							</div>
+							<div class="input-control">
+								<input type="text" placeholder="Название компании" class="input" />
+							</div>
+							<div class="input-control">
+								<input type="text" placeholder="Контактное лицо" class="input" />
+							</div>
+							<div class="input-control">
+								<input type="tel" placeholder="Номер телефона" class="input" />
+							</div>
+							<div class="input-control">
+								<input type="email" placeholder="Email" class="input" />
+							</div>
+							<button type="submit" class="btn-s">Отправить</button>
+							<div class="check-wrapper">
+								<span class="wpcf7-form-control-wrap" data-name="acceptance-84">
+									<span class="wpcf7-form-control wpcf7-acceptance">
+										<span class="wpcf7-list-item">
+											<label>
+												<input type="checkbox" name="acceptance-84" value="1" required aria-invalid="false" />
+												<span class="wpcf7-list-item-label">
+													<span>
+														Нажимая на кнопку «Отправить», подтверждаю своё
+														согласие с <a href="#" target="_blank">обработкой персональных данных</a> и
+														положениями <a href="#" target="_blank">Политики конфиденциальности</a>
+													</span>
+												</span>
+											</label>
+										</span>
+									</span>
+								</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	<aside>
+		<div class="burger" id="burger">
+			<div class="burger__body">
+				<div class="burger__wrapper-menu _active _show" id="burger-menu-start">
+					<ul class="list burger__list">
+						<li class="menu-item-has-children">
+							<a href="#">Услуги</a>
+							<ul class="sub-menu">
+								<li><a href="#">Прямое бельё</a></li>
+								<li><a href="#">Махра</a></li>
+								<li><a href="#">Ресторанный текстиль</a></li>
+								<li><a href="#">Униформа</a></li>
+								<li><a href="#">MED/SPA SAFE</a></li>
+							</ul>
+						</li>
+						<li class="menu-item-has-children">
+							<a href="#">Решения по отраслям</a>
+							<ul class="sub-menu">
+								<li><a href="#">Прямое бельё 2</a></li>
+								<li><a href="#">Махра 2</a></li>
+								<li><a href="#">Ресторанный текстиль 2</a></li>
+								<li><a href="#">Униформа 2</a></li>
+								<li><a href="#">MED/SPA SAFE 2</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Тестовая партия</a>
+						</li>
+						<li>
+							<a href="#">Логистика</a>
+						</li>
+						<li>
+							<a href="#">Партнерство</a>
+						</li>
+						<li>
+							<a href="#">О компании</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="burger__wrapper-menu" id="burger-menu-inside">
+					<div class="burger__prev-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+						</svg>
+						<span>Назад</span>
+					</div>
+				</div>
+				<div class="burger__info">
+					<a href="#" target="_blank" class="burger__info-item">
+						г. Ессентуки, ул. Пятигорская, 149
+					</a>
+					<div class="burger__info-item">Пн-Пт: с 09.00 до 21.00</div>
+				</div>
+				<div class="burger__buttons">
+					<a href="#modal-feedback" data-target-note="#input-modal-feedback" data-note="Заказать звонок" data-fancybox class="btn-s _white">
+						Заказать звонок
+					</a>
+					<a href="#modal-feedback" data-target-note="#input-modal-feedback" data-note="Получить КП" data-fancybox class="btn-s">
+						Получить КП
+					</a>
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	<main>
+
+		<section class="s-hero">
+			<div class="container">
+				<div class="s-hero__body">
+					<h1 class="m-title s-hero__title">
+						<span>Промышленная прачечная</span> <br> для санаториев и бизнеса КМВ
+					</h1>
+					<p class="text-b s-hero__content">Строгий возврат партиями и 100% анти-пересорт — <br> ваш текстиль возвращается в идеальном порядке</p>
+					<div class="s-hero__buttons">
+						<a href="#modal-feedback" data-fancybox data-target-note="#input-modal-feedback" data-note="Получить КП" class="btn-s">Получить КП</a>
+						<a href="#modal-feedback" data-fancybox data-target-note="#input-modal-feedback" data-note="Заказать тестовую партию" class="btn-s _white">Заказать тестовую партию</a>
+					</div>
+					<picture class="s-hero__picture">
+						<img src="img/hero-main.png" alt="image">
+					</picture>
+				</div>
+				<div class="s-hero__adv">
+					<div class="s-hero__adv-item">
+						<img src="img/hero-icon-1.svg" alt="image" class="icon">
+						<span class="text-b">Стабильные <br> сроки</span>
+					</div>
+					<div class="s-hero__adv-item">
+						<img src="img/hero-icon-2.svg" alt="image" class="icon">
+						<span class="text-b">Ровное прямое <br> белье</span>
+					</div>
+					<div class="s-hero__adv-item">
+						<img src="img/hero-icon-3.svg" alt="image" class="icon">
+						<span class="text-b">Экспресс <br> 24 часа</span>
+					</div>
+					<div class="s-hero__adv-item">
+						<img src="img/hero-icon-4.svg" alt="image" class="icon">
+						<span class="text-b">Доставка <br> по графику</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-services sect-m">
+			<div class="container">
+				<div class="sect-head">
+					<div class="grid-layout sect-head__wrapper">
+						<div class="sect-head__subtitle">НАШИ УСЛУГИ</div>
+						<h2 class="s-title">
+							Что мы стираем
+							<br />
+							и обслуживаем
+						</h2>
+					</div>
+				</div>
+				<div class="s-services__grid">
+					<div class="item-fake"></div>
+					<a href="#" class="card-service">
+						<div class="card-service__body">
+							<div class="card-service__head">
+								<h3 class="title">Прямое белье</h3>
+								<div class="circle">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+									</svg>
+								</div>
+							</div>
+							<img src="img/service.png" alt="image" class="card-service__img" />
+						</div>
+					</a>
+					<a href="#" class="card-service">
+						<div class="card-service__body">
+							<div class="card-service__head">
+								<h3 class="title">Махра</h3>
+								<div class="circle">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+									</svg>
+								</div>
+							</div>
+							<img src="img/service.png" alt="image" class="card-service__img" />
+						</div>
+					</a>
+					<a href="#" class="card-service">
+						<div class="card-service__body">
+							<div class="card-service__head">
+								<h3 class="title">Ресторанный текстиль</h3>
+								<div class="circle">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+									</svg>
+								</div>
+							</div>
+							<img src="img/service.png" alt="image" class="card-service__img" />
+						</div>
+					</a>
+					<a href="#" class="card-service">
+						<div class="card-service__body">
+							<div class="card-service__head">
+								<h3 class="title">Униформа персонала</h3>
+								<div class="circle">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+									</svg>
+								</div>
+							</div>
+							<img src="img/service.png" alt="image" class="card-service__img" />
+						</div>
+					</a>
+					<a href="#" class="card-service">
+						<div class="card-service__body">
+							<div class="card-service__head">
+								<h3 class="title">MED / SPA текстиль</h3>
+								<div class="circle">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+									</svg>
+								</div>
+							</div>
+							<img src="img/service.png" alt="image" class="card-service__img" />
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-offer sect-m">
+			<div class="container">
+				<div class="s-offer__body">
+					<div class="sect-head">
+						<div class="grid-layout sect-head__wrapper">
+							<div class="sect-head__subtitle">НАШИ ПРЕДЛОЖЕНИЯ</div>
+							<h2 class="s-title">
+								<span>Готовые решения</span>
+								для
+								<br />
+								бизнеса любого масштаба
+							</h2>
+						</div>
+					</div>
+					<div class="s-offer__grid">
+						<div class="card-offer">
+							<div class="card-offer__body">
+								<div class="card-offer__title">STANDART 48</div>
+								<div class="card-offer__info">
+									<ul class="list card-offer__list">
+										<li>
+											<strong>
+												<strong>Прямое белье:</strong>
+												стирка+сушка+каландр
+											</strong>
+										</li>
+										<li>
+											<span>
+												<strong>Махра:</strong>
+												стирка+сушка
+											</span>
+										</li>
+										<li>
+											<span>
+												<strong>Возврат:</strong>
+												сортировка по партиям
+											</span>
+										</li>
+										<li>
+											<span>
+												<strong>Доставка по графику:</strong>
+												2-3 раза в неделю
+											</span>
+										</li>
+									</ul>
+									<a href="#modal-feedback" data-fancybox data-target-note="#input-modal-feedback" data-note="Получить КП" class="btn-s card-offer__btn">
+										Получить КП
+									</a>
+								</div>
+								<div class="card-offer__show-text">STANDART 48</div>
+							</div>
+						</div>
+						<div class="card-offer">
+							<div class="card-offer__body">
+								<div class="card-offer__title">HOTEL PRO</div>
+								<div class="card-offer__info">
+									<ul class="list card-offer__list">
+										<li>
+											<span>
+												<strong>Прямое белье:</strong>
+												стирка+сушка+каландр
+											</span>
+										</li>
+										<li>
+											<span>
+												<strong>Махра:</strong>
+												стирка+сушка
+											</span>
+										</li>
+										<li>
+											<span>
+												<strong>Возврат:</strong>
+												сортировка по партиям
+											</span>
+										</li>
+										<li>
+											<span>
+												<strong>Доставка по графику:</strong>
+												2-3 раза в неделю
+											</span>
+										</li>
+										<li>
+											<span>
+												<strong>Маркировка партий:</strong>
+												корпус/этаж/дата Упаковка: стрейч/пакет
+											</span>
+										</li>
+										<li>
+											<span>
+												<strong>Фиксированные окна забора/доставки</strong>
+												(логистика)
+											</span>
+										</li>
+									</ul>
+									<a href="#modal-feedback" data-fancybox data-target-note="#input-modal-feedback" data-note="Получить КП" class="btn-s card-offer__btn">
+										Получить КП
+									</a>
+								</div>
+								<div class="card-offer__show-text">HOTEL PRO</div>
+							</div>
+						</div>
+						<div class="card-offer">
+							<div class="card-offer__body">
+								<div class="card-offer__title">STANDART 48</div>
+								<div class="card-offer__info">
+									<ul class="list card-offer__list">
+										<li>
+											<strong>Раздельные потоки, отдельные мешки</strong>
+										</li>
+										<li>
+											<span>
+												<strong>Режимы дез/санитарии:</strong>
+												регламент+журнал
+											</span>
+										</li>
+										<li>
+											<span>
+												<strong>Индивидуальная упаковка</strong>
+											</span>
+										</li>
+										<li>
+											<span>
+												<strong>SLA и ответственность</strong>
+											</span>
+										</li>
+									</ul>
+									<a href="#modal-feedback" data-fancybox data-target-note="#input-modal-feedback" data-note="Получить КП" class="btn-s card-offer__btn">
+										Получить КП
+									</a>
+								</div>
+								<div class="card-offer__show-text">STANDART 48</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-adv sect-m">
+			<div class="container">
+				<div class="s-adv__body">
+					<div class="sect-head">
+						<div class="grid-layout sect-head__wrapper">
+							<div class="sect-head__subtitle">
+								СЕРВИС, КОТОРОМУ
+								<br />
+								МОЖНО ДОВЕРЯТЬ
+							</div>
+							<h2 class="s-title">
+								Преимущества, которые
+								<br />
+								делают нашу прачечную
+								<br />
+								<span>эффективным партнером</span>
+							</h2>
+						</div>
+					</div>
+					<div class="grid-layout s-adv__grid-layout">
+						<div class="s-adv__grid-item-fake"></div>
+						<div class="s-adv__main">
+							<div class="s-adv__slider swiper">
+								<div class="swiper-wrapper">
+									<article class="swiper-slide s-adv__slide">
+										<img src="img/adv-img.jpg" alt="image" class="s-adv__slide-img" />
+										<div class="s-adv__slide-body">
+											<div class="s-adv__slide-num">1</div>
+											<h3 class="text-b s-adv__slide-title">
+												Собственный каландр — идеально ровное белье
+											</h3>
+											<p class="text-m">
+												Высокотемпературный каландр обеспечивает профессиональное
+												разглаживание и подачу белья без складок и заломов
+											</p>
+										</div>
+									</article>
+									<article class="swiper-slide s-adv__slide">
+										<img src="img/adv-img.jpg" alt="image" class="s-adv__slide-img" />
+										<div class="s-adv__slide-body">
+											<div class="s-adv__slide-num">2</div>
+											<h3 class="text-b s-adv__slide-title">
+												Собственный каландр — идеально ровное белье
+											</h3>
+											<p class="text-m">
+												Высокотемпературный каландр обеспечивает профессиональное
+												разглаживание и подачу белья без складок и заломов
+											</p>
+										</div>
+									</article>
+									<article class="swiper-slide s-adv__slide">
+										<img src="img/adv-img.jpg" alt="image" class="s-adv__slide-img" />
+										<div class="s-adv__slide-body">
+											<div class="s-adv__slide-num">3</div>
+											<h3 class="text-b s-adv__slide-title">
+												Собственный каландр — идеально ровное белье
+											</h3>
+											<p class="text-m">
+												Высокотемпературный каландр обеспечивает профессиональное
+												разглаживание и подачу белья без складок и заломов
+											</p>
+										</div>
+									</article>
+								</div>
+							</div>
+							<div class="slider-arrows">
+								<div class="slider-arrow _prev">
+									<svg>
+										<use xlink:href='img/icons/icons.svg#icon-prev-arrow'></use>
+									</svg>
+								</div>
+								<div class="slider-arrow _next">
+									<svg>
+										<use xlink:href='img/icons/icons.svg#icon-next-arrow'></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<footer class="footer">
+		<div class="container">
+		</div>
+	</footer>
+
+	<script src="./files/fancybox/fancybox.min.js?_v=20260221024950"></script>
+	<script src="./files/swiper/swiper.min.js?_v=20260221024950"></script>
+	<script src="./files/inputmask/inputmask.min.js?_v=20260221024950"></script>
+	<script src="js/app.min.js?_v=20260221024950"></script>
+</body>
+
+</html>

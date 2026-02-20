@@ -20,4 +20,13 @@
       padding: 50px 20px;
     }
   }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+
+    @include tablet {
+      gap: 20px;
+    }
+  }
 }

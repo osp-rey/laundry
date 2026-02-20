@@ -17,6 +17,7 @@
 @use "./ui/grid-layout";
 @use "./ui/card-service";
 @use "./ui/card-offer";
+@use "./ui/slider";
 
 // components
 @use "./components/header";
@@ -25,5 +26,6 @@
 @use "./components/burger";
 @use "./components/s-services";
 @use "./components/s-offer";
+@use "./components/s-adv";
 
 @use "./components/footer";

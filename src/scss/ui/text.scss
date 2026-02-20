@@ -1,5 +1,5 @@
-@use '../base/templates' as *;
-@use '../base/media' as *;
+@use "../base/templates" as *;
+@use "../base/media" as *;
 
 .text-b {
   font-weight: 500;
@@ -10,5 +10,13 @@
   }
   @include tablet {
     font-size: 16px;
+  }
+}
+.text-m {
+  font-size: 16px;
+  line-height: 140%;
+  margin: 0;
+  @include tablet {
+    font-size: 14px;
   }
 }
