@@ -30,6 +30,17 @@
     z-index: 1;
 
     transition: transform 0.3s ease;
+
+    @include laptop-middle {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    @include laptop-min {
+      padding: 20px;
+    }
+    @include tablet {
+      padding: 15px;
+    }
   }
   &__title {
     @include flex-center;
@@ -44,6 +55,9 @@
     line-height: 120%;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+    @include laptop-middle {
+      width: 100%;
+    }
   }
   &__info {
     display: flex;
@@ -51,6 +65,13 @@
     justify-content: space-between;
     grid-column: 3 span;
     gap: 20px;
+    row-gap: 25px;
+    @include laptop-middle {
+      grid-column: 1 span;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+    }
   }
   &__list {
     li {
@@ -60,6 +81,12 @@
       line-height: 187%;
       strong {
         font-weight: 500;
+      }
+      @include tablet-min {
+        line-height: 124%;
+        &:not(:last-child) {
+          margin-bottom: 7px;
+        }
       }
 
       &::before {
@@ -71,12 +98,19 @@
         margin-top: 10px;
         flex-shrink: 0;
         content: "";
+        @include tablet-min {
+          margin-top: 6px;
+        }
       }
     }
   }
   &__btn {
     width: 310px;
     max-width: 100%;
+
+    @include tablet-min {
+      width: 100%;
+    }
   }
   &__show-text {
     position: absolute;
@@ -92,5 +126,9 @@
     opacity: 0.5;
 
     z-index: -1;
+
+    @include tablet {
+      display: none;
+    }
   }
 }

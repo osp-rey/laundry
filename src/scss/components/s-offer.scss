@@ -1,7 +1,23 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
 .s-offer {
+  @include tablet {
+    .s-title {
+      br {
+        display: none;
+      }
+    }
+  }
   &__body {
     padding: 70px 50px;
     border-radius: 30px;
     background-color: var(--gray-l);
+    @include laptop-min {
+      padding: 50px 30px;
+    }
+    @include tablet {
+      padding: 50px 20px;
+    }
   }
 }
