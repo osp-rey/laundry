@@ -1,0 +1,18 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.content-wrapper {
+  position: relative;
+  padding: 70px 25px;
+  border-radius: 30px;
+  background-color: var(--gray-l);
+  overflow: hidden;
+  z-index: 1;
+  @include tablet {
+    padding: 50px 20px;
+  }
+
+  &._primary-m {
+    background-color: var(--primary-m);
+  }
+}

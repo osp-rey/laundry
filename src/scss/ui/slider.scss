@@ -45,5 +45,24 @@
     --background: white;
     --border: white;
     pointer-events: none;
+
+    &._do {
+      --background: var(--primary-m);
+      --border: var(--primary-m);
+      --color: white;
+    }
+  }
+}
+
+.slider-fraction {
+  font-weight: 500;
+  color: var(--primary-m);
+  user-select: none;
+  width: fit-content;
+  left: auto;
+  bottom: auto;
+
+  .swiper-pagination-current {
+    color: var(--primary);
   }
 }

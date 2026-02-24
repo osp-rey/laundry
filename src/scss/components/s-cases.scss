@@ -1,0 +1,150 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-cases {
+  &__slider-wrapper {
+    position: relative;
+    border-radius: 30px;
+    background-color: white;
+    padding: 25px 0px;
+    @include laptop-middle {
+      padding: 25px;
+    }
+    @include tablet {
+      padding: 20px;
+    }
+  }
+  &__slider {
+  }
+  &__slide {
+  }
+  &__slide-grid {
+    @include laptop-middle {
+      display: flex;
+      gap: 25px;
+    }
+    @include tablet {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  &__slide-gallery {
+    flex-shrink: 0;
+    @media (min-width: 1200px) {
+      padding-left: 25px;
+    }
+    img {
+      display: block;
+      width: 245px;
+      border-radius: 30px;
+
+      @include laptop-min {
+        width: 185px;
+      }
+    }
+  }
+  &__slide-body {
+    display: flex;
+    gap: 25px;
+    grid-column: 3 span;
+    @media (min-width: 1200px) {
+      padding-right: 25px;
+    }
+    @include laptop-middle {
+      flex: 1;
+      flex-direction: column;
+    }
+  }
+  &__slide-head {
+    flex: 0 1 315px;
+    @include laptop-middle {
+      flex: auto;
+    }
+  }
+  &__slide-title {
+  }
+  &__slide-descr {
+    margin-top: 15px;
+  }
+  &__slide-items {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 25px;
+    @include tablet {
+      gap: 15px;
+    }
+  }
+  &__slide-item {
+    &:not(:last-child) {
+      padding-bottom: 25px;
+      border-bottom: 1px solid var(--primary-m);
+      @include tablet {
+        padding-bottom: 15px;
+      }
+    }
+
+    .name {
+      margin-bottom: 10px;
+      @include tablet {
+        margin-bottom: 5px;
+      }
+    }
+    .text {
+      line-height: 140%;
+    }
+  }
+  &__slider-nav {
+    align-items: center;
+    margin-top: 40px;
+    @include laptop-middle {
+      display: flex;
+    }
+    @include tablet {
+      margin-top: 30px;
+    }
+
+    .slider-arrows {
+      grid-column: 3 span;
+      @include laptop-middle {
+        margin-left: auto;
+      }
+    }
+    .slider-fraction {
+      @include tablet {
+        position: absolute;
+        top: 18px;
+        right: 24px;
+        left: auto;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .slider-fraction {
+        padding-left: 25px;
+      }
+      .slider-arrows {
+        padding-right: 25px;
+      }
+    }
+  }
+  &__more-wrapper {
+    margin-top: 30px;
+
+    @include laptop-middle {
+      .item-fake {
+        display: none;
+      }
+    }
+  }
+  &__btn-more {
+    grid-column: 3 span;
+    margin: 0px 0px 0px 340px;
+    @include laptop-middle {
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+      grid-column: auto;
+    }
+  }
+}

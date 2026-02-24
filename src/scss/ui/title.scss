@@ -64,3 +64,15 @@
     color: var(--primary);
   }
 }
+
+.f-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  margin: 0;
+  
+  span {
+    color: var(--primary);
+  }
+}

@@ -1,0 +1,76 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.circle-rotate {
+  width: 175px;
+  height: 175px;
+  user-select: none;
+
+  @include tablet {
+    width: 115px;
+    height: 115px;
+  }
+}
+.circle-rotate-wrapper {
+  @include flex-center;
+  position: relative;
+  background-color: white;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+  }
+  &::before {
+    inset: 0;
+    border-radius: 50%;
+    background-color: white;
+    z-index: -1;
+  }
+  &::after {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    top: 6px;
+    left: 6px;
+    z-index: -2;
+
+    @include tablet {
+      top: 4px;
+      left: 4px;
+    }
+  }
+}
+.circle-rotate-text {
+  position: absolute;
+  width: calc(100% - 35px);
+  z-index: 1;
+  pointer-events: none;
+  animation: spin 6s linear infinite;
+
+  @include tablet {
+    width: calc(100% - 20px);
+  }
+}
+.circle-rotate-icon {
+  display: block;
+  width: 50px;
+
+  @include tablet-min {
+    width: 30px;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

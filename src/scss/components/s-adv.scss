@@ -9,18 +9,6 @@
       }
     }
   }
-  &__body {
-    padding: 70px 50px;
-    background-color: var(--primary-m);
-    border-radius: 30px;
-    overflow: hidden;
-    @include laptop-min {
-      padding: 50px 30px;
-    }
-    @include tablet {
-      padding: 50px 20px;
-    }
-  }
   &__grid-layout {
     @include laptop-min {
       display: block;

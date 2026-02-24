@@ -9,17 +9,6 @@
       }
     }
   }
-  &__body {
-    padding: 70px 50px;
-    border-radius: 30px;
-    background-color: var(--gray-l);
-    @include laptop-min {
-      padding: 50px 30px;
-    }
-    @include tablet {
-      padding: 50px 20px;
-    }
-  }
   &__grid {
     display: grid;
     grid-template-columns: 1fr;

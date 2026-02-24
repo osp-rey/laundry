@@ -114,6 +114,36 @@
                 }
             });
         }
+        const stepsSlider = document.querySelector(".s-steps__slider");
+        if (stepsSlider && window.matchMedia("(max-width:1199px)").matches) {
+            new Swiper(stepsSlider, {
+                speed: 900,
+                spaceBetween: 15,
+                slidesPerView: "auto",
+                breakpoints: {
+                    576: {
+                        spaceBetween: 20,
+                        slidesPerView: "auto"
+                    }
+                }
+            });
+        }
+        const casesSlider = document.querySelector(".s-cases__slider");
+        if (casesSlider) {
+            new Swiper(casesSlider, {
+                speed: 900,
+                spaceBetween: 20,
+                slidesPerView: 1,
+                pagination: {
+                    el: ".s-cases .slider-fraction",
+                    type: "fraction"
+                },
+                navigation: {
+                    prevEl: ".s-cases .slider-arrow._prev",
+                    nextEl: ".s-cases .slider-arrow._next"
+                }
+            });
+        }
     }
     function spoller() {
         const spollersArray = document.querySelectorAll("[data-spollers]");
