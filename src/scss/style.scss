@@ -20,6 +20,7 @@
 @use "./ui/slider";
 @use "./ui/circle-rotate";
 @use "./ui/content-wrapper";
+@use "./ui/social";
 
 // components
 @use "./components/header";
@@ -36,5 +37,6 @@
 @use "./components/s-location";
 @use "./components/s-faq";
 @use "./components/s-get-calc";
+@use "./components/s-contacts";
 
 @use "./components/footer";

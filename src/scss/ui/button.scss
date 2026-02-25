@@ -77,4 +77,10 @@
     border-color: var(--border-h);
     color: var(--color-h);
   }
+
+  &._green-h {
+    --background-h: #2cb742;
+    --border-h: #2cb742;
+    --color-h: white;
+  }
 }

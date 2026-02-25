@@ -5,6 +5,8 @@
 <rect x="0.188477" y="15.916" width="22.4829" height="2.69794" rx="1" transform="rotate(-45 0.188477 15.916)" fill="currentColor"/>
 </symbol><symbol viewBox="0 0 23 23" fill="none" id="icon-max" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7471 22.9344C9.48994 22.9344 8.441 22.6034 6.6177 21.2797C5.46441 22.7689 1.81232 23.9327 1.65305 21.9415C1.65305 20.4468 1.32354 19.1837 0.950092 17.8047C0.505251 16.1059 0 14.214 0 11.4727C0 4.92554 5.34908 0 11.6867 0C18.0298 0 22.9999 5.16823 22.9999 11.5334C23.0212 17.8001 17.9867 22.9009 11.7471 22.9344ZM11.8405 5.65913C8.75403 5.49918 6.3486 7.64479 5.81588 11.0094C5.37653 13.7948 6.15638 17.187 6.8209 17.3635C7.13942 17.4407 7.94124 16.7899 8.441 16.2879C9.26737 16.8613 10.2297 17.2056 11.2309 17.2863C14.4289 17.4408 17.1615 14.9955 17.3763 11.7871C17.5013 8.57189 15.039 5.84864 11.8405 5.66465L11.8405 5.65913Z" fill="currentColor"/>
+</symbol><symbol viewBox="0 0 6 11" fill="none" id="icon-next" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.8" d="M0.75 9.75L4.75 5.25L0.75 0.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol viewBox="0 0 13 13" fill="none" id="icon-next-arrow" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.16707 7.04171L2.16707 5.95837L8.66707 5.95837L5.68791 2.97921L6.45707 2.21004L10.7471 6.50004L6.45707 10.79L5.6879 10.0209L8.66707 7.04171L2.16707 7.04171Z" fill="currentColor"/>
 </symbol><symbol viewBox="0 0 6 9" fill="none" id="icon-prev" xmlns="http://www.w3.org/2000/svg">
