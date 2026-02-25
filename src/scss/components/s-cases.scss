@@ -130,12 +130,6 @@
   }
   &__more-wrapper {
     margin-top: 30px;
-
-    @include laptop-middle {
-      .item-fake {
-        display: none;
-      }
-    }
   }
   &__btn-more {
     grid-column: 3 span;

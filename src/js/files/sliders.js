@@ -56,4 +56,34 @@ export default function sliders() {
       },
     });
   }
+
+  const reviewsSlider = document.querySelector(".s-reviews__slider");
+
+  if (reviewsSlider) {
+    const swiper = new Swiper(reviewsSlider, {
+      speed: 900,
+      spaceBetween: 15,
+      slidesPerView: "auto",
+      navigation: {
+        prevEl: ".s-reviews .slider-arrow._prev",
+        nextEl: ".s-reviews .slider-arrow._next",
+      },
+      breakpoints: {
+        992: {
+          spaceBetween: 20,
+          slidesPerView: 3,
+        },
+      },
+    });
+  }
+
+  const locationSlider = document.querySelector(".s-location__slider");
+
+  if (locationSlider) {
+    const swiper = new Swiper(locationSlider, {
+      speed: 900,
+      spaceBetween: 15,
+      slidesPerView: "auto",
+    });
+  }
 }

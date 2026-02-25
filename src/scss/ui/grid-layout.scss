@@ -1,5 +1,5 @@
-@use '../base/templates' as *;
-@use '../base/media' as *;
+@use "../base/templates" as *;
+@use "../base/media" as *;
 
 .grid-layout {
   display: grid;
@@ -7,6 +7,9 @@
   gap: 20px;
 
   @include laptop-middle {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 100%);
+    .item-fake {
+      display: none;
+    }
   }
 }

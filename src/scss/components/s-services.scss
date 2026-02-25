@@ -9,10 +9,6 @@
 
     @include laptop-middle {
       grid-template-columns: repeat(3, 1fr);
-
-      .item-fake {
-        display: none;
-      }
     }
     @include laptop-min {
       grid-template-columns: repeat(2, 1fr);
