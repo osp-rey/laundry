@@ -2,7 +2,7 @@
 @use "../base/media" as *;
 
 .burger {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
