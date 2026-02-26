@@ -84,3 +84,40 @@
     --color-h: white;
   }
 }
+
+.btn-c {
+  --background: white;
+  --border: white;
+  --color: var(--primary);
+  --background-h: var(--primary);
+  --border-h: var(--primary);
+  --color-h: white;
+  @include flex-center;
+  border-radius: 50%;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+
+  color: var(--color);
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+
+  @include hover {
+    background-color: var(--background-h);
+    border-color: var(--border-h);
+    color: var(--color-h);
+  }
+
+  svg {
+    width: 13px;
+    height: 13px;
+  }
+}

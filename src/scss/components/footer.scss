@@ -8,7 +8,7 @@
     border-radius: 30px;
     padding: 40px 25px;
     background-color: var(--primary-m);
-    z-index: 1;
+    z-index: 2;
     @include laptop-middle {
       padding-top: 200px;
     }
@@ -29,13 +29,26 @@
     }
   }
   &__nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    align-items: flex-end;
     gap: 30px;
+    width: 100%;
     @media (min-width: 1200px) {
       padding-top: 160px;
       grid-column: 3 span;
     }
+
+    [data-btn-up] {
+      @include tablet-min {
+        display: none;
+      }
+    }
+  }
+  &__nav-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    flex: 1;
     @include tablet {
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
@@ -141,7 +154,7 @@
         top: -50px;
         height: 50px;
         background-color: var(--primary-f);
-        z-index: -12;
+        z-index: -1;
       }
     }
 
@@ -151,21 +164,40 @@
   }
   &__bottom-main {
     display: flex;
+    align-items: start;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 15px;
     color: rgba(51, 51, 51, 0.8);
     @media (min-width: 1200px) {
       grid-column: 3 span;
       padding: 20px 90px 20px 0px;
     }
+    @include laptop-min {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    [data-btn-up] {
+      @media (min-width: 576px) {
+        display: none;
+      }
+    }
   }
   &__bottom-list {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    @include tablet-min {
+      gap: 2px;
+    }
 
     a {
       transition: color .3s ease;
+      @include tablet-min {
+        font-size: 14px;
+      }
       @include hover {
         color: var(--primary);
       }

@@ -3,9 +3,20 @@
 
 .header {
   position: sticky;
+  top: 0;
   padding: 14px 0px;
   background-color: white;
   z-index: 130;
+
+  transition:
+    background-color 0.3s ease,
+    backdrop-filter 0.3s ease;
+
+  &._scroll {
+    backdrop-filter: blur(6.8px);
+    background: rgba(255, 255, 255, 0.8);
+  }
+
   @include laptop-min {
     margin-bottom: 15px;
   }
