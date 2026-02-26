@@ -284,6 +284,43 @@ img {
   width: 13px;
   height: 13px
 }
+.btn-simple {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--primary)
+}
+.btn-simple._active .circle {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+.btn-simple .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #fff;
+  flex-shrink: 0;
+  transition: background-color .3s ease,-webkit-transform .3s ease;
+  transition: transform .3s ease,background-color .3s ease;
+  transition: transform .3s ease,background-color .3s ease,-webkit-transform .3s ease
+}
+.btn-simple .circle svg {
+  width: 9px;
+  height: 9px
+}
 .list {
   padding-left: 0;
   margin: 0;
@@ -816,6 +853,40 @@ img {
   gap: 20px;
   flex-shrink: 0
 }
+.content {
+  font-size: 16px;
+  line-height: 140%
+}
+.content p {
+  margin: 0
+}
+.content>* {
+  margin: 0;
+  transition: opacity .3s ease
+}
+.content>*:not(:last-child) {
+  margin-bottom: 20px
+}
+.content ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 187%
+}
+.content ul li {
+  display: flex;
+  align-items: start;
+  gap: 10px
+}
+.content ul li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-top: 10px;
+  background-color: var(--primary-m);
+  flex-shrink: 0
+}
 .header {
   position: sticky;
   top: 0;
@@ -1338,15 +1409,40 @@ img {
 .s-steps__mob-buttons .btn-s {
   width: 100%
 }
+.s-steps__quote {
+  padding: 55px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: -.02em;
+  text-align: center;
+  border-radius: 30px;
+  background-color: var(--primary-m);
+  margin-top: 25px
+}
+.s-steps__quote span {
+  color: var(--primary)
+}
+.s-steps__quote .wrap {
+  margin: 0 auto;
+  width: 1155px;
+  max-width: 100%
+}
 .b-offer {
   position: relative;
   overflow: hidden;
   padding: 25px 20px 25px 50px;
+  background-color: var(--gray-l);
   border-radius: 30px;
-  background-color: var(--primary-m);
   z-index: 1
 }
-.b-offer::before {
+.b-offer._primary {
+  background-color: var(--primary-m)
+}
+.b-offer._primary .b-offer__title span {
+  color: #fff
+}
+.b-offer._primary::before {
   position: absolute;
   content: "";
   width: 1540px;
@@ -1367,9 +1463,6 @@ img {
 }
 .b-offer__info {
   flex: 1
-}
-.b-offer__title span {
-  color: #fff
 }
 .b-offer__list {
   margin-top: 30px;
@@ -1777,6 +1870,39 @@ img {
   overflow: hidden;
   z-index: 10
 }
+.s-static__body {
+  display: flex;
+  align-items: start;
+  gap: 80px;
+  padding: 25px 25px 25px 50px;
+  border-radius: 30px;
+  background-color: var(--gray-l)
+}
+.s-static__info {
+  flex: 1;
+  padding-top: 35px
+}
+.s-static__info .btn-simple {
+  margin-top: 35px
+}
+.s-static__title {
+  margin-bottom: 40px
+}
+.s-static__content {
+  padding-right: 20px
+}
+.s-static__content>*:nth-child(n+4) {
+  opacity: 0;
+  display: none;
+  transition: opacity .3s ease
+}
+.s-static__img {
+  position: sticky;
+  top: 90px;
+  display: block;
+  border-radius: 30px;
+  width: 685px
+}
 .footer {
   padding-bottom: 25px
 }
@@ -1963,6 +2089,12 @@ img {
   .s-steps__item._big {
     grid-column: 1 span
   }
+  .s-steps__quote {
+    padding: 30px
+  }
+  .s-steps__quote br {
+    display: none
+  }
   .b-offer__gallery .circle-rotate {
     left: -55px
   }
@@ -1971,6 +2103,13 @@ img {
   }
   .s-location__item {
     width: 100%
+  }
+  .s-static__body {
+    gap: 40px;
+    padding-left: 25px
+  }
+  .s-static__img {
+    width: 500px
   }
 }
 @media (max-width:1199px) {
@@ -2050,7 +2189,7 @@ img {
   .s-steps__article {
     height: 100%
   }
-  .b-offer::before {
+  .b-offer._primary::before {
     display: none
   }
   .b-offer__wrapper {
@@ -2112,6 +2251,9 @@ img {
   .s-contacts__map {
     right: 20px;
     left: 20px
+  }
+  .s-static__img {
+    width: 400px
   }
   .footer__wrapper {
     padding-top: 200px
@@ -2189,6 +2331,9 @@ img {
   .s-adv__slider {
     width: 100%
   }
+  .s-steps__quote {
+    font-size: 26px
+  }
   .b-offer {
     margin-top: 80px
   }
@@ -2230,6 +2375,21 @@ img {
   }
   .s-contacts__map {
     height: 400px
+  }
+  .s-static__body {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center
+  }
+  .s-static__info {
+    flex: auto;
+    width: 100%
+  }
+  .s-static__title {
+    margin-bottom: 30px
+  }
+  .s-static__img {
+    width: 685px
   }
   .footer__bottom-main {
     flex-direction: column;
@@ -2314,6 +2474,18 @@ img {
   }
   .content-wrapper {
     padding: 50px 20px
+  }
+  .content {
+    font-size: 14px
+  }
+  .content>*:not(:last-child) {
+    margin-bottom: 18px
+  }
+  .content ul {
+    line-height: 150%
+  }
+  .content ul li::before {
+    margin-top: 6px
   }
   .header {
     padding: 5px 0;
@@ -2505,6 +2677,9 @@ img {
     right: 18px;
     left: 18px
   }
+  .s-static__body {
+    padding: 20px
+  }
   .footer__wrapper {
     padding: 250px 20px 20px 20px
   }
@@ -2556,6 +2731,11 @@ img {
   .s-services__grid {
     grid-template-columns: 1fr
   }
+  .s-steps__quote {
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 20px
+  }
   .b-offer__btn {
     width: 100%
   }
@@ -2576,6 +2756,9 @@ img {
   }
   .s-contacts__info-grid {
     grid-template-columns: 1fr
+  }
+  .s-static__info .btn-simple {
+    margin-top: 15px
   }
   .footer__nav [data-btn-up] {
     display: none
@@ -2636,6 +2819,9 @@ img {
     background-color: var(--background-h);
     border-color: var(--border-h);
     color: var(--color-h)
+  }
+  .btn-simple:hover .circle {
+    background-color: var(--primary-f)
   }
   .modal__close:hover {
     background-color: #fff
@@ -2722,6 +2908,9 @@ img {
     background-color: var(--background-h);
     border-color: var(--border-h);
     color: var(--color-h)
+  }
+  .btn-simple:active .circle {
+    background-color: var(--primary-f)
   }
   .modal__close:active {
     background-color: #fff

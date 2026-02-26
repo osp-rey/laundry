@@ -6,6 +6,7 @@ import buttonsNote from "./files/buttonsNote.js";
 import headerScroll from "./files/headerScroll.js";
 import inputmask from "./files/inputmask.js";
 import map from "./files/map.js";
+import more from "./files/more.js";
 import sliders from "./files/sliders.js";
 import spoller from "./files/spoller.js";
 
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   map();
   btnUp();
   headerScroll();
+  more();
 
   Fancybox.bind("[data-fancybox]", {
     closeButton: false,

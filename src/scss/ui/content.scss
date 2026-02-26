@@ -1,0 +1,57 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.content {
+  font-size: 16px;
+  line-height: 140%;
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  & > * {
+    margin: 0;
+    transition: opacity .3s ease;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+      @include tablet {
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 187%;
+
+    @include tablet {
+      line-height: 150%;
+    }
+
+    li {
+      display: flex;
+      align-items: start;
+      gap: 10px;
+
+      &::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-top: 10px;
+        background-color: var(--primary-m);
+        flex-shrink: 0;
+
+        @include tablet {
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+}

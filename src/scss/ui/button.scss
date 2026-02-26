@@ -121,3 +121,45 @@
     height: 13px;
   }
 }
+
+.btn-simple {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  width: fit-content;
+
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--primary);
+
+  &._active {
+    .circle {
+      transform: rotate(180deg);
+    }
+  }
+
+  @include hover {
+    .circle {
+      background-color: var(--primary-f);
+    }
+  }
+
+  .circle {
+    @include flex-center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    flex-shrink: 0;
+
+    transition: transform .3s ease, background-color .3s ease;
+
+    svg {
+      width: 9px;
+      height: 9px;
+    }
+  }
+}

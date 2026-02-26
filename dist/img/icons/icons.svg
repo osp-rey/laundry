@@ -2,6 +2,8 @@
 <path d="M2.23979 7.07309L2.23006 5.98492L8.75931 5.98492L5.73998 2.99247L6.5057 2.21987L10.8535 6.52901L6.58276 10.8381L5.80323 10.0655L8.76904 7.07309L2.23979 7.07309Z" fill="currentColor"/>
 </symbol><symbol viewBox="0 0 13 13" fill="none" id="icon-arrow-top" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.04171 10.8329L5.95837 10.8329L5.95837 4.33293L2.97921 7.3121L2.21004 6.54293L6.50004 2.25293L10.79 6.54293L10.0209 7.3121L7.04171 4.33293L7.04171 10.8329Z" fill="currentColor"/>
+</symbol><symbol viewBox="0 0 9 9" fill="none" id="icon-bottom" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.74833 -4.30792e-05L4.83167 -4.31265e-05L4.83167 6.49996L7.81083 3.52079L8.58 4.28996L4.29 8.57996L-1.87522e-07 4.28996L0.769167 3.52079L3.74833 6.49996L3.74833 -4.30792e-05Z" fill="currentColor"/>
 </symbol><symbol viewBox="0 0 18 18" fill="none" id="icon-close" xmlns="http://www.w3.org/2000/svg">
 <rect x="1.9082" width="22.4829" height="2.69794" rx="1" transform="rotate(45 1.9082 0)" fill="currentColor"/>
 <rect x="0.188477" y="15.916" width="22.4829" height="2.69794" rx="1" transform="rotate(-45 0.188477 15.916)" fill="currentColor"/>

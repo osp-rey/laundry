@@ -1,0 +1,76 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-static {
+  &__body {
+    display: flex;
+    align-items: start;
+    gap: 80px;
+    padding: 25px 25px 25px 50px;
+    border-radius: 30px;
+    background-color: var(--gray-l);
+    @include laptop {
+      gap: 40px;
+      padding-left: 25px;
+    }
+    @include laptop-min {
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    @include tablet {
+      padding: 20px;
+    }
+  }
+  &__info {
+    flex: 1;
+    padding-top: 35px;
+
+    @include laptop-min {
+      flex: auto;
+      width: 100%;
+    }
+
+    .btn-simple {
+      margin-top: 35px;
+
+      @include tablet-min {
+        margin-top: 15px;
+      }
+    }
+  }
+  &__title {
+    margin-bottom: 40px;
+    @include laptop-min {
+      margin-bottom: 30px;
+    }
+  }
+  &__content {
+    padding-right: 20px;
+
+    & > * {
+      &:nth-child(n+4) {
+        opacity: 0;
+        display: none;
+
+        transition: opacity .3s ease;
+      }
+    }
+  }
+  &__img {
+    position: sticky;
+    top: 90px;
+    display: block;
+    border-radius: 30px;
+    width: 685px;
+    @include laptop {
+      width: 500px;
+    }
+    @include laptop-middle {
+      width: 400px;
+    }
+    @include laptop-min {
+      width: 685px;
+    }
+  }
+}

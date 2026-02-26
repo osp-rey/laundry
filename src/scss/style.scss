@@ -21,6 +21,7 @@
 @use "./ui/circle-rotate";
 @use "./ui/content-wrapper";
 @use "./ui/social";
+@use "./ui/content";
 
 // components
 @use "./components/header";
@@ -38,5 +39,6 @@
 @use "./components/s-faq";
 @use "./components/s-get-calc";
 @use "./components/s-contacts";
+@use "./components/s-static";
 
 @use "./components/footer";
