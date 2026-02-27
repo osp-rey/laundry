@@ -2,6 +2,11 @@
 @use "../base/media" as *;
 
 .s-services {
+  .sect-head {
+    @include laptop-middle {
+      padding: 0 20px;
+    }
+  }
   &__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

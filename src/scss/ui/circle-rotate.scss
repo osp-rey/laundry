@@ -6,6 +6,15 @@
   height: 175px;
   user-select: none;
 
+  &._primary-m {
+    .circle-rotate-wrapper {
+      background-color: var(--primary-m);
+      &::before {
+        background-color: var(--primary-m);
+      }
+    }
+  }
+
   @include tablet {
     width: 115px;
     height: 115px;

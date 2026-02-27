@@ -62,6 +62,9 @@
     gap: 18px;
     &._head {
       margin-bottom: 245px;
+      @media (max-width: 1500px) {
+        margin-bottom: 215px;
+      }
     }
     &._bottom {
       justify-content: flex-end;
@@ -92,6 +95,7 @@
       display: block;
       pointer-events: none;
       width: 18px;
+      margin-top: 3px;
     }
     .title {
       margin-bottom: 5px;

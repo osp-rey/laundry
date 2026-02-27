@@ -1,9 +1,9 @@
-@use '../base/templates' as *;
-@use '../base/media' as *;
+@use "../base/templates" as *;
+@use "../base/media" as *;
 
 .fancybox__backdrop {
-  background-color: var(--gray-l);
-  opacity: 0.8 !important;
+  background-color: rgba(246, 248, 250, 0.8);
+  backdrop-filter: blur(3px);
 }
 .modal {
   display: none;
@@ -28,7 +28,7 @@
   &__wrapper {
     display: flex;
     align-items: center;
-    gap: 40px
+    gap: 40px;
   }
   &__close {
     @include flex-center;
@@ -42,7 +42,9 @@
     color: var(--primary);
     cursor: pointer;
 
-    transition: color .3s ease, background-color .3s ease;
+    transition:
+      color 0.3s ease,
+      background-color 0.3s ease;
 
     @include hover {
       background-color: white;

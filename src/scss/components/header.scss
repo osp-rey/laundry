@@ -34,6 +34,11 @@
     -webkit-tap-highlight-color: transparent;
     user-select: none;
 
+    transition: opacity .3s ease;
+    @include hover {
+      opacity: 0.8;
+    }
+
     @include tablet {
       width: 150px;
     }
@@ -175,6 +180,7 @@
         & > a {
           &::after {
             transform: rotate(90deg);
+            background: url("@img/next-primary.svg") center / contain no-repeat;
           }
         }
         .sub-menu {
@@ -208,7 +214,9 @@
           height: 11px;
           background: url("@img/next.svg") center / contain no-repeat;
 
-          transition: transform 0.3s ease;
+          transition:
+            transform 0.3s ease,
+            background 0.3s ease;
         }
       }
     }
@@ -218,8 +226,8 @@
       list-style: none;
       padding: 0;
       left: 0;
-      padding: 25px 65px;
-      width: 430px;
+      padding: 25px;
+      width: 350px;
       display: flex;
       flex-direction: column;
       gap: 10px;

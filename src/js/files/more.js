@@ -13,7 +13,7 @@ export default function more() {
       btn.addEventListener("click", () => {
         if (!btn.classList.contains("_active")) {
           btn.classList.add("_active");
-          spanBtn.textContent = "Скрыть текст";
+          spanBtn.textContent = "Свернуть текст";
           childrens.forEach((c) => {
             c.style.display = "block";
             setTimeout(() => {

@@ -29,7 +29,6 @@
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     outline: none;
-    box-shadow: 0 4px 51px -30px var(--primary);
     z-index: 1;
 
     @include laptop-min {
@@ -65,8 +64,9 @@
     border-radius: 20px;
     overflow: hidden;
     height: 100%;
+    box-shadow: 0 4px 51px -30px var(--primary);
 
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
 
     &::before {
       position: absolute;
@@ -76,7 +76,7 @@
       opacity: 0;
       z-index: 1;
 
-      transition: opacity .3s ease;
+      transition: opacity 0.3s ease;
     }
 
     .img {
@@ -92,7 +92,7 @@
       position: absolute;
       z-index: 10;
       opacity: 0;
-      transition: opacity .3s ease;
+      transition: opacity 0.3s ease;
     }
   }
 }
