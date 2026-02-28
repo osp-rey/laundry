@@ -3,6 +3,7 @@ import btnUp from "./files/btnUp.js";
 import burger from "./files/burger.js";
 import burgerMenu from "./files/burgerMenu.js";
 import buttonsNote from "./files/buttonsNote.js";
+import handlerCookie from "./files/handlerCookie.js";
 import headerScroll from "./files/headerScroll.js";
 import inputmask from "./files/inputmask.js";
 import map from "./files/map.js";
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   btnUp();
   headerScroll();
   more();
+  handlerCookie();
 
   Fancybox.bind("[data-fancybox]", {
     closeButton: false,

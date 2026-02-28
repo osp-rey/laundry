@@ -84,6 +84,14 @@
     --border-h: #2cb742;
     --color-h: white;
   }
+  &._primary-f {
+    --background: var(--primary-f);
+    --border: var(--primary-f);
+    --color: var(--primary);
+    --background-h: var(--primary);
+    --border-h: var(--primary);
+    --color-h: white;
+  }
 }
 
 .btn-c {
@@ -136,7 +144,7 @@
   font-size: 16px;
   color: var(--primary);
 
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 
   &._active {
     .circle {
@@ -148,7 +156,7 @@
     color: var(--primary-d);
     .circle {
       background-color: var(--primary);
-      color: white
+      color: white;
     }
   }
 
@@ -160,7 +168,10 @@
     background-color: white;
     flex-shrink: 0;
 
-    transition: transform .3s ease, background-color .3s ease, color .3s ease;
+    transition:
+      transform 0.3s ease,
+      background-color 0.3s ease,
+      color 0.3s ease;
 
     svg {
       width: 9px;
