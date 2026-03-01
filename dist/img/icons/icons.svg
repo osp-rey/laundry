@@ -13,6 +13,8 @@
 <path opacity="0.8" d="M0.75 9.75L4.75 5.25L0.75 0.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol viewBox="0 0 13 13" fill="none" id="icon-next-arrow" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.16707 7.04171L2.16707 5.95837L8.66707 5.95837L5.68791 2.97921L6.45707 2.21004L10.7471 6.50004L6.45707 10.79L5.6879 10.0209L8.66707 7.04171L2.16707 7.04171Z" fill="currentColor"/>
+</symbol><symbol viewBox="0 0 70 72" fill="none" id="icon-play" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.3803 66.9501C37.9303 59.9163 51.2703 51.7376 64.6366 44.035C71.0703 40.3263 71.0703 31.6738 64.6366 27.965C51.2703 20.2625 37.9303 12.0838 25.3803 5.05005C19.4416 1.69005 11.5353 6.86755 11.1053 13.875C10.3503 28.625 10.3503 43.375 11.1053 58.1251C11.5353 65.1326 19.4416 70.3101 25.3803 66.9501Z" fill="currentColor"/>
 </symbol><symbol viewBox="0 0 6 9" fill="none" id="icon-prev" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.5 0.75L0.75 4.5L4.5 8.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol viewBox="0 0 13 13" fill="none" id="icon-prev-arrow" xmlns="http://www.w3.org/2000/svg">

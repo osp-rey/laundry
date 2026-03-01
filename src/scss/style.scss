@@ -24,6 +24,7 @@
 @use "./ui/content";
 @use "./ui/cookie";
 @use "./ui/breadcrumbs";
+@use "./ui/video-palyer";
 
 // components
 @use "./components/header";
@@ -43,5 +44,6 @@
 @use "./components/s-contacts";
 @use "./components/s-static";
 @use "./components/s-shape";
+@use "./components/s-intro";
 
 @use "./components/footer";

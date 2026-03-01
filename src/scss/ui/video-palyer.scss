@@ -1,0 +1,131 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.video-player {
+  @include flex-center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1/0.52;
+  border-radius: 30px;
+  max-height: 755px;
+  min-height: 285px;
+  z-index: 1;
+
+  @include hover {
+    .video-player__btn {
+      opacity: 1 !important;
+    }
+  }
+
+  &._playing {
+    .video-player__video {
+      opacity: 1;
+      visibility: visible;
+    }
+    .video-player__btn {
+      opacity: 0;
+    }
+    .video-player__btn {
+      .items {
+        display: flex;
+      }
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  &__video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+  }
+  &__btn {
+    --background: rgba(231, 241, 248, 0.5);
+    --color: white;
+    --background-h: var(--primary-m);
+    --color-h: white;
+
+    @include flex-center;
+    position: absolute;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    background-color: var(--background);
+    color: var(--color);
+    z-index: 2;
+
+    transition:
+      color 0.3s ease,
+      background-color 0.3s ease,
+      opacity 0.3s ease;
+
+    @include hover {
+      color: var(--color-h);
+      background-color: var(--background-h);
+    }
+    @include laptop-min {
+      width: 80px;
+      height: 80px;
+    }
+    @include tablet {
+      width: 55px;
+      height: 55px;
+    }
+
+    svg {
+      width: 70px;
+      height: 70px;
+
+      @include laptop-min {
+        width: 35px;
+        height: 35px;
+      }
+      @include tablet {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .items {
+      display: none;
+      gap: 15px;
+      @include laptop-min {
+        gap: 8px;
+      }
+      @include tablet-min {
+        gap: 4px;
+      }
+
+      .item {
+        width: 20px;
+        border-radius: 5px;
+        height: 70px;
+        background-color: currentColor;
+
+        @include laptop-min {
+          width: 12px;
+          border-radius: 3px;
+          height: 45px;
+        }
+        @include tablet-min {
+          width: 8px;
+          height: 25px;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}

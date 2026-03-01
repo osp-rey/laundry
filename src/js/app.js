@@ -10,6 +10,7 @@ import map from "./files/map.js";
 import more from "./files/more.js";
 import sliders from "./files/sliders.js";
 import spoller from "./files/spoller.js";
+import videoPlayer from "./files/videoPlayer.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   spoller();
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   headerScroll();
   more();
   handlerCookie();
+  videoPlayer();
 
   Fancybox.bind("[data-fancybox]", {
     closeButton: false,
