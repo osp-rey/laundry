@@ -1,0 +1,124 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-shape {
+  &__content-wrapper {
+    position: relative;
+    overflow: visible !important;
+    z-index: 1;
+    
+    &:first-child {
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 30px;
+        background-color: var(--gray-l);
+        z-index: -1;
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+
+    @media (min-width: 1200px) {
+      grid-column: 3 span;
+    }
+    @include laptop-min {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__items {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 25px;
+    flex: 1;
+    @include laptop-min {
+      flex: auto;
+      width: 100%;
+      gap: 20px;
+    }
+  }
+  &__item {
+    position: sticky;
+    width: 100%;
+
+    .head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 15px;
+      margin-bottom: 15px;
+
+      @include tablet {
+        margin-bottom: 10px;
+      }
+    }
+
+    .rect {
+      @include flex-center;
+      width: 50px;
+      height: 50px;
+      border-radius: 15px;
+      background: var(--primary-f);
+      flex-shrink: 0;
+
+      @include tablet {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+      }
+
+      &._red {
+        background: rgba(223, 48, 25, 0.2);
+      }
+
+      img {
+        display: block;
+        width: 20px;
+
+        @include tablet {
+          width: 18px;
+        }
+      }
+    }
+    .descr {
+      max-width: 435px;
+    }
+  }
+  &__item-body {
+    border-radius: 30px;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 2px -1px 7px 2px rgba(25, 142, 223, 0.1);
+    width: 100%;
+    @include tablet {
+      padding: 20px;
+    }
+  }
+  &__buttons {
+    flex: 0 1 335px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include laptop-min {
+      width: 500px;
+      max-width: 100%;
+      flex: auto;
+    }
+    @include tablet {
+      gap: 15px;
+    }
+
+    .btn-s {
+      width: 100%;
+    }
+  }
+}

@@ -23,6 +23,7 @@
 @use "./ui/social";
 @use "./ui/content";
 @use "./ui/cookie";
+@use "./ui/breadcrumbs";
 
 // components
 @use "./components/header";
@@ -41,5 +42,6 @@
 @use "./components/s-get-calc";
 @use "./components/s-contacts";
 @use "./components/s-static";
+@use "./components/s-shape";
 
 @use "./components/footer";
