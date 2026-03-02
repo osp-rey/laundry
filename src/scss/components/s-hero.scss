@@ -58,6 +58,20 @@
         top: auto;
       }
     }
+
+    &._sanatorium {
+      @include laptop-min {
+        padding-bottom: 220px;
+      }
+      .s-hero__picture {
+        @include laptop-middle {
+          width: 600px;
+        }
+        @include laptop-min {
+          width: 460px;
+        }
+      }
+    }
   }
   &__title {
     margin-bottom: 20px;

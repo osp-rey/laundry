@@ -60,4 +60,9 @@
       max-width: 100%;
     }
   }
+  &__quote {
+    @include laptop-min {
+      margin-top: 80px;
+    }
+  }
 }

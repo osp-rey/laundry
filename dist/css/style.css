@@ -867,6 +867,10 @@ img {
 .content-wrapper._primary-f {
   background-color: var(--primary-f)
 }
+.content-wrapper._primary {
+  background-color: var(--primary);
+  color: #fff
+}
 .social {
   display: flex;
   gap: 20px;
@@ -875,6 +879,9 @@ img {
 .content {
   font-size: 16px;
   line-height: 140%
+}
+.content strong {
+  font-weight: 500
 }
 .content p {
   margin: 0
@@ -1029,6 +1036,35 @@ img {
   border-radius: 5px;
   height: 70px;
   background-color: currentColor
+}
+.ticker {
+  display: flex
+}
+.ticker-item {
+  padding: 0 12px;
+  flex-shrink: 0;
+  -webkit-animation: tickerAnim 5s linear infinite;
+  animation: tickerAnim 5s linear infinite
+}
+@-webkit-keyframes tickerAnim {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
+  to {
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0)
+  }
+}
+@keyframes tickerAnim {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
+  to {
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0)
+  }
 }
 .header {
   position: sticky;
@@ -1917,7 +1953,7 @@ img {
 .s-get-calc__gallery img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 630px;
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 30px
@@ -2158,6 +2194,58 @@ img {
   margin: 0 150px 0 auto;
   max-width: 540px
 }
+.s-gallery {
+  overflow: hidden
+}
+.s-gallery__slider {
+  overflow: visible!important
+}
+.s-gallery__slide {
+  display: block;
+  width: 205px!important;
+  border-radius: 30px;
+  overflow: hidden
+}
+.s-gallery__slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: -webkit-transform .3s linear;
+  transition: transform .3s linear;
+  transition: transform .3s linear,-webkit-transform .3s linear
+}
+.s-gallery__nav {
+  margin-top: 30px
+}
+.s-partners__slider {
+  width: 100%;
+  overflow: visible!important
+}
+.s-partners__slider .swiper-wrapper {
+  transition-timing-function: linear
+}
+.s-partners__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: #fff;
+  min-height: 105px;
+  height: auto!important
+}
+.s-partners__slide img {
+  display: block;
+  -webkit-filter: grayscale(100%)!important;
+  filter: grayscale(100%)!important;
+  opacity: .7;
+  transition: opacity .3s ease,-webkit-filter .3s ease;
+  transition: filter .3s ease,opacity .3s ease;
+  transition: filter .3s ease,opacity .3s ease,-webkit-filter .3s ease
+}
 .footer {
   padding-bottom: 25px
 }
@@ -2284,6 +2372,11 @@ img {
   .burger {
     display: none
   }
+  .s-partners__slider .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px
+  }
 }
 @media (min-width:1200px) {
   .s-steps__mob {
@@ -2322,6 +2415,9 @@ img {
   }
   .s-intro__content {
     font-size: 18px
+  }
+  .s-partners__slider {
+    grid-column: 3 span
   }
   .footer__nav {
     padding-top: 160px;
@@ -2430,6 +2526,9 @@ img {
   }
   .header__tel {
     padding-left: 0
+  }
+  .s-hero__body._sanatorium .s-hero__picture {
+    width: 600px
   }
   .s-hero__picture {
     width: 800px
@@ -2628,6 +2727,12 @@ img {
   .s-hero__body {
     padding: 70px 30px 30px 30px
   }
+  .s-hero__body._sanatorium {
+    padding-bottom: 220px
+  }
+  .s-hero__body._sanatorium .s-hero__picture {
+    width: 460px
+  }
   .s-services__grid {
     grid-template-columns: repeat(2,1fr)
   }
@@ -2713,6 +2818,15 @@ img {
     width: 500px;
     max-width: 100%;
     flex: auto
+  }
+  .s-intro__quote {
+    margin-top: 80px
+  }
+  .s-partners__slide {
+    border-radius: 20px;
+    min-height: 85px;
+    width: 190px!important;
+    max-width: 100%
   }
   .footer__bottom-main {
     flex-direction: column;
@@ -3272,6 +3386,15 @@ img {
   .s-contacts__item a.val:hover {
     color: var(--primary)
   }
+  .s-gallery__slide:hover img {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08)
+  }
+  .s-partners__slide:hover img {
+    -webkit-filter: grayscale(0)!important;
+    filter: grayscale(0)!important;
+    opacity: 1
+  }
   .footer__logo:hover {
     opacity: .8
   }
@@ -3381,6 +3504,15 @@ img {
   }
   .s-contacts__item a.val:active {
     color: var(--primary)
+  }
+  .s-gallery__slide:active img {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08)
+  }
+  .s-partners__slide:active img {
+    -webkit-filter: grayscale(0)!important;
+    filter: grayscale(0)!important;
+    opacity: 1
   }
   .footer__logo:active {
     opacity: .8

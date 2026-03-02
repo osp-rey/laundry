@@ -18,4 +18,8 @@
   &._primary-f {
     background-color: var(--primary-f);
   }
+  &._primary {
+    background-color: var(--primary);
+    color: white;
+  }
 }

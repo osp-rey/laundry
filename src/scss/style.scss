@@ -25,6 +25,7 @@
 @use "./ui/cookie";
 @use "./ui/breadcrumbs";
 @use "./ui/video-palyer";
+@use "./ui/ticker";
 
 // components
 @use "./components/header";
@@ -45,5 +46,7 @@
 @use "./components/s-static";
 @use "./components/s-shape";
 @use "./components/s-intro";
+@use "./components/s-gallery";
+@use "./components/s-partners";
 
 @use "./components/footer";
