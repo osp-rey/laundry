@@ -209,7 +209,7 @@
             const childrens = Array.from(container.children).filter(item => window.getComputedStyle(item).display === "none");
             const spanBtn = btn.querySelector("span");
             const startTextBTn = spanBtn.textContent;
-            btn.addEventListener("click", () => {
+            if (childrens.length <= Array.from(container.children).length) btn.remove(); else btn.addEventListener("click", () => {
                 if (!btn.classList.contains("_active")) {
                     btn.classList.add("_active");
                     spanBtn.textContent = "Свернуть текст";

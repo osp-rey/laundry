@@ -6,6 +6,16 @@
   z-index: 1;
   -webkit-tap-highlight-color: transparent;
 
+  &._white {
+    color: white;
+
+    .card-service__head {
+      .circle {
+        color: black;
+      }
+    }
+  }
+
   @include hover {
     .card-service__body {
       transform: translate(-6px, -6px);
@@ -25,16 +35,8 @@
     .circle {
       transform: rotate(45deg);
       background-color: var(--primary);
-      color: white;
+      color: white !important;
     }
-  }
-
-  .title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 120%;
-    margin: 0;
-    max-width: 130px;
   }
 
   &__body {
@@ -60,9 +62,14 @@
     justify-content: space-between;
     gap: 20px;
 
-    .text-b {
-      max-width: 130px;
+    .title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      margin: 0;
+      max-width: 170px;
     }
+
     .circle {
       @include flex-center;
       width: 40px;
