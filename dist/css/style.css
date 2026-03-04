@@ -1733,11 +1733,18 @@ img {
   object-fit: cover;
   border-radius: 30px
 }
+.s-cases__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px
+}
 .s-cases__more-wrapper {
   margin-top: 30px
 }
 .s-cases__btn-more {
   grid-column: 3 span;
+  width: 330px;
+  max-width: 100%;
   margin: 0 0 0 340px
 }
 .s-reviews {
@@ -2049,6 +2056,23 @@ img {
   margin-top: 35px;
   height: 160px
 }
+.s-contacts__requisites {
+  margin: 100px 0 80px 0
+}
+.s-contacts__requisites-title {
+  margin-bottom: 40px
+}
+.s-contacts__requisites-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px
+}
+.s-contacts__requisites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  line-height: 140%
+}
 .s-contacts__map {
   position: absolute;
   top: 0;
@@ -2264,6 +2288,37 @@ img {
   transition: filter .3s ease,opacity .3s ease;
   transition: filter .3s ease,opacity .3s ease,-webkit-filter .3s ease
 }
+.s-overview {
+  overflow: hidden
+}
+.s-overview__slider {
+  overflow: visible!important;
+  margin-bottom: 30px
+}
+.s-overview__slide {
+  border-radius: 30px;
+  overflow: hidden;
+  width: 505px!important;
+  max-width: 100%;
+  aspect-ratio: 1/.56;
+  outline: 0;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+.s-overview__slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: -webkit-transform .3s linear;
+  transition: transform .3s linear;
+  transition: transform .3s linear,-webkit-transform .3s linear
+}
+.s-selection__slider {
+  width: 100%
+}
 .footer {
   padding-bottom: 25px
 }
@@ -2435,6 +2490,9 @@ img {
     font-size: 18px
   }
   .s-partners__slider {
+    grid-column: 3 span
+  }
+  .s-selection__slider {
     grid-column: 3 span
   }
   .footer__nav {
@@ -2804,6 +2862,12 @@ img {
     align-items: start;
     gap: 30px
   }
+  .s-contacts__requisites {
+    margin: 80px 0 55px 0
+  }
+  .s-contacts__requisites-title {
+    margin-bottom: 30px
+  }
   .s-contacts__map {
     height: 400px
   }
@@ -3095,6 +3159,9 @@ img {
   .b-offer__btn {
     margin-top: 30px
   }
+  .s-cases__grid {
+    gap: 20px
+  }
   .s-location .content-wrapper {
     background-size: cover!important;
     min-height: 675px
@@ -3171,6 +3238,9 @@ img {
   }
   .s-intro__content-wrapper {
     padding-bottom: 30px!important
+  }
+  .s-overview__slide {
+    width: 300px!important
   }
   .footer__wrapper {
     padding: 250px 20px 20px 20px
@@ -3263,8 +3333,18 @@ img {
   .s-contacts__info-grid {
     grid-template-columns: 1fr
   }
+  .s-contacts__requisites-wrapper {
+    grid-template-columns: 1fr;
+    gap: 6px
+  }
+  .s-contacts__requisites-list {
+    gap: 6px
+  }
   .s-static__info .btn-simple {
     margin-top: 15px
+  }
+  .s-overview__slide {
+    width: 285px!important
   }
   .footer__nav [data-btn-up] {
     display: none
@@ -3416,6 +3496,10 @@ img {
     filter: grayscale(0)!important;
     opacity: 1
   }
+  .s-overview__slide:hover img {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08)
+  }
   .footer__logo:hover {
     opacity: .8
   }
@@ -3534,6 +3618,10 @@ img {
     -webkit-filter: grayscale(0)!important;
     filter: grayscale(0)!important;
     opacity: 1
+  }
+  .s-overview__slide:active img {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08)
   }
   .footer__logo:active {
     opacity: .8

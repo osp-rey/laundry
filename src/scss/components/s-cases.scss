@@ -2,13 +2,21 @@
 @use "../base/media" as *;
 
 .s-cases {
-  &__slider {
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    @include tablet {
+      gap: 20px;
+    }
   }
   &__more-wrapper {
     margin-top: 30px;
   }
   &__btn-more {
     grid-column: 3 span;
+    width: 330px;
+    max-width: 100%;
     margin: 0px 0px 0px 340px;
     @include laptop-middle {
       max-width: 500px;

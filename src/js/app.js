@@ -7,6 +7,7 @@ import handlerCookie from "./files/handlerCookie.js";
 import headerScroll from "./files/headerScroll.js";
 import inputmask from "./files/inputmask.js";
 import map from "./files/map.js";
+import mediaAdaptive from "./files/mediaAdaptive.js";
 import more from "./files/more.js";
 import sliders from "./files/sliders.js";
 import spoller from "./files/spoller.js";
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   more();
   handlerCookie();
   videoPlayer();
+  mediaAdaptive();
 
   Fancybox.bind("[data-fancybox]", {
     closeButton: false,

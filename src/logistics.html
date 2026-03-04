@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  @@include('html/head.html')
+  <body class="body">
+    @@include('html/components/header.html')
+    @@include('html/components/modals.html')
+    @@include('html/components/burger.html')
+    <main>
+
+      <div class="breadcrumbs">
+        <div class="container">
+          <div class="aioseo-breadcrumbs">
+            <span class="aioseo-breadcrumb">
+              <a href="#" title="Главная">Главная</a>
+            </span>
+            <span class="aioseo-breadcrumb-separator">—</span>
+            <span class="aioseo-breadcrumb">Логистика</span>
+          </div>
+        </div>
+      </div>
+
+      @@include('html/components/s-hero-logistics.html')
+      @@include('html/repeat/s-static-logistics.html')
+      @@include('html/components/s-location.html')
+      @@include('html/repeat/s-adv-logistics.html')
+      @@include('html/components/s-overview.html')
+      @@include('html/components/s-selection.html')
+
+    </main>
+    @@include('html/components/footer.html')
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

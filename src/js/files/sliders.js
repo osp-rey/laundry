@@ -138,4 +138,46 @@ export default function sliders() {
       },
     });
   }
+
+  const overviewSlider = document.querySelector(".s-overview__slider");
+
+  if (overviewSlider) {
+    const swiper = new Swiper(overviewSlider, {
+      speed: 900,
+      spaceBetween: 15,
+      slidesPerView: "auto",
+      autoplay: {
+        delay: 4000,
+      },
+      navigation: {
+        prevEl: ".s-overview .slider-arrow._prev",
+        nextEl: ".s-overview .slider-arrow._next",
+      },
+      breakpoints: {
+        768: {
+          spaceBetween: 25,
+          slidesPerView: "auto",
+        },
+      },
+    });
+  }
+
+  const selectionSlider = document.querySelector(".s-selection__slider");
+
+  if (selectionSlider) {
+    const swiper = new Swiper(selectionSlider, {
+      speed: 900,
+      spaceBetween: 15,
+      slidesPerView: "auto",
+      autoplay: {
+        delay: 4000,
+      },
+      breakpoints: {
+        768: {
+          spaceBetween: 20,
+          slidesPerView: 3,
+        },
+      },
+    });
+  }
 }

@@ -1,0 +1,17 @@
+.s-selection {
+  &__slider {
+    width: 100%;
+
+    @media (min-width: 1200px) {
+      grid-column: 3 span;
+    }
+  }
+  &__slide {
+  }
+  &__slide-body {
+  }
+  &__slide-title {
+  }
+  &__slide-content {
+  }
+}

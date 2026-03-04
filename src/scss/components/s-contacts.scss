@@ -1,5 +1,5 @@
-@use '../base/templates' as *;
-@use '../base/media' as *;
+@use "../base/templates" as *;
+@use "../base/media" as *;
 
 .s-contacts {
   &__grid {
@@ -42,7 +42,7 @@
       }
     }
     a.val {
-      transition: color .3s ease;
+      transition: color 0.3s ease;
       @include hover {
         color: var(--primary);
       }
@@ -54,6 +54,36 @@
     height: 160px;
     @include tablet {
       height: 55px;
+    }
+  }
+  &__requisites {
+    margin: 100px 0px 80px 0px;
+    @include laptop-min {
+      margin: 80px 0px 55px 0px;
+    }
+  }
+  &__requisites-title {
+    margin-bottom: 40px;
+    @include laptop-min {
+      margin-bottom: 30px;
+    }
+  }
+  &__requisites-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    @include tablet-min {
+      grid-template-columns: 1fr;
+      gap: 6px;
+    }
+  }
+  &__requisites-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    line-height: 140%;
+    @include tablet-min {
+      gap: 6px;
     }
   }
   &__map {

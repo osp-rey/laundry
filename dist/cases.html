@@ -1,0 +1,609 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Чисто`PROFF</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap&_v=20260304160402" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20260304160402">
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20260304160402">
+	<link rel="stylesheet" href="css/style.min.css?_v=20260304160402" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a href="/" class="header__logo">
+					<img src="img/logo.svg" alt="logo" />
+				</a>
+				<div class="header__contacts">
+					<div class="header__contacts-main">
+						<div class="header__contacts-item">Пн-Пт: с 09.00 до 21.00</div>
+						<a href="#" target="_blank" class="header__contacts-item">
+							г. Ессентуки, ул. Пятигорская, 149
+						</a>
+					</div>
+					<div class="header__tel">
+						<div class="header__tel-title">Заказать звонок</div>
+						<a href="tel:+79255550126" class="header__tel-btn">
+							+7 (925) 555-01-26
+						</a>
+					</div>
+					<a href="#modal-feedback" data-fancybox data-target-note="#input-modal-feedback" data-note="Получить КП" class="btn-s header__btn">
+						Получить КП
+					</a>
+				</div>
+				<div class="header__mob-buttons">
+					<a href="tel:+79255550126" class="header__mob-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+						</svg>
+					</a>
+					<div class="header__mob-btn _burger" id="burger-toggle">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="header-b">
+		<div class="container">
+			<nav class="header-b__nav">
+				<ul class="list header-b__list">
+					<li class="menu-item-has-children">
+						<a href="#">Услуги</a>
+						<ul class="sub-menu">
+							<li><a href="#">Прямое бельё</a></li>
+							<li><a href="#">Махра</a></li>
+							<li><a href="#">Ресторанный текстиль </a></li>
+							<li><a href="#">Униформа</a></li>
+							<li><a href="#">MED/SPA SAFE</a></li>
+						</ul>
+					</li>
+					<li class="menu-item-has-children">
+						<a href="#">Решения по отраслям</a>
+						<ul class="sub-menu">
+							<li><a href="#">Прямое бельё</a></li>
+							<li><a href="#">Махра</a></li>
+							<li><a href="#">Ресторанный текстиль </a></li>
+							<li><a href="#">Униформа</a></li>
+							<li><a href="#">MED/SPA SAFE</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Тестовая партия</a></li>
+					<li><a href="#">Логистика</a></li>
+					<li><a href="#">Партнерство</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<aside>
+		<div class="modal" id="modal-feedback">
+			<div class="modal__inside">
+				<div class="modal__wrapper">
+					<div class="modal__close" data-fancybox-close>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+					</div>
+					<img src="img/modal-img.jpg" alt="image" class="modal__img" />
+					<div class="modal__body">
+						<div class="t-title modal__title">Оставьте ваши данные</div>
+						<form action="#" class="modal__form">
+							<div style="display: none;">
+								<input type="text" id="input-modal-feedback">
+							</div>
+							<div class="input-control">
+								<input type="text" placeholder="Название компании" class="input" />
+							</div>
+							<div class="input-control">
+								<input type="text" placeholder="Контактное лицо" class="input" />
+							</div>
+							<div class="input-control">
+								<input type="tel" placeholder="Номер телефона" class="input" />
+							</div>
+							<div class="input-control">
+								<input type="email" placeholder="Email" class="input" />
+							</div>
+							<button type="submit" class="btn-s">Отправить</button>
+							<div class="check-wrapper">
+								<span class="wpcf7-form-control-wrap" data-name="acceptance-84">
+									<span class="wpcf7-form-control wpcf7-acceptance">
+										<span class="wpcf7-list-item">
+											<label>
+												<input type="checkbox" name="acceptance-84" value="1" required aria-invalid="false" />
+												<span class="wpcf7-list-item-label">
+													<span>
+														Нажимая на кнопку «Отправить», подтверждаю своё
+														согласие с <a href="#" target="_blank">обработкой персональных данных</a> и
+														положениями <a href="#" target="_blank">Политики конфиденциальности</a>
+													</span>
+												</span>
+											</label>
+										</span>
+									</span>
+								</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	<aside>
+		<div class="burger" id="burger">
+			<div class="burger__body">
+				<div class="burger__wrapper-menu _active _show" id="burger-menu-start">
+					<ul class="list burger__list">
+						<li class="menu-item-has-children">
+							<a href="#">Услуги</a>
+							<ul class="sub-menu">
+								<li><a href="#">Прямое бельё</a></li>
+								<li><a href="#">Махра</a></li>
+								<li><a href="#">Ресторанный текстиль</a></li>
+								<li><a href="#">Униформа</a></li>
+								<li><a href="#">MED/SPA SAFE</a></li>
+							</ul>
+						</li>
+						<li class="menu-item-has-children">
+							<a href="#">Решения по отраслям</a>
+							<ul class="sub-menu">
+								<li><a href="#">Прямое бельё 2</a></li>
+								<li><a href="#">Махра 2</a></li>
+								<li><a href="#">Ресторанный текстиль 2</a></li>
+								<li><a href="#">Униформа 2</a></li>
+								<li><a href="#">MED/SPA SAFE 2</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Тестовая партия</a>
+						</li>
+						<li>
+							<a href="#">Логистика</a>
+						</li>
+						<li>
+							<a href="#">Партнерство</a>
+						</li>
+						<li>
+							<a href="#">О компании</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="burger__wrapper-menu" id="burger-menu-inside">
+					<div class="burger__prev-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+						</svg>
+						<span>Назад</span>
+					</div>
+				</div>
+				<div class="burger__info">
+					<a href="#" target="_blank" class="burger__info-item">
+						г. Ессентуки, ул. Пятигорская, 149
+					</a>
+					<div class="burger__info-item">Пн-Пт: с 09.00 до 21.00</div>
+				</div>
+				<div class="burger__buttons">
+					<a href="#modal-feedback" data-target-note="#input-modal-feedback" data-note="Заказать звонок" data-fancybox class="btn-s _white">
+						Заказать звонок
+					</a>
+					<a href="#modal-feedback" data-target-note="#input-modal-feedback" data-note="Получить КП" data-fancybox class="btn-s">
+						Получить КП
+					</a>
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	<main>
+
+		<div class="breadcrumbs">
+			<div class="container">
+				<div class="aioseo-breadcrumbs">
+					<span class="aioseo-breadcrumb">
+						<a href="#" title="Главная">Главная</a>
+					</span>
+					<span class="aioseo-breadcrumb-separator">—</span>
+					<span class="aioseo-breadcrumb">Все кейсы</span>
+				</div>
+			</div>
+		</div>
+
+		<section class="s-cases sect-m">
+			<div class="container s-cases__container">
+				<div class="content-wrapper">
+					<div class="sect-head">
+						<div class="grid-layout sect-head__wrapper">
+							<div class="sect-head__subtitle">КЕЙСЫ</div>
+							<h2 class="s-title">Кейсы</h2>
+						</div>
+					</div>
+					<div class="s-cases__grid">
+						<div class="card-case-wrapper">
+							<article class="card-case">
+								<div class="grid-layout card-case__grid">
+									<div class="card-case__gallery">
+										<img src="img/case.jpg" alt="image" />
+									</div>
+									<div class="card-case__body">
+										<div class="card-case__head">
+											<h3 class="f-title card-case__title">Park & House Hotel</h3>
+											<p class="text-m card-case__descr">
+												Отель на 150 номеров, ежедневная смена постельного и махрового
+												фонда
+											</p>
+										</div>
+										<div class="card-case__items">
+											<div class="card-case__item">
+												<div class="name text-b">Задача</div>
+												<p class="text text-m">
+													Обеспечить стабильную стирку и своевременную логистику,
+													исключив задержки и путаницу между корпусами и этажами.
+												</p>
+											</div>
+											<div class="card-case__item">
+												<div class="name text-b">Объем</div>
+												<p class="text text-m">
+													Около 600–700 кг белья в сутки: постельное, полотенца,
+													халаты.
+												</p>
+											</div>
+											<div class="card-case__item">
+												<div class="name text-b">Результат</div>
+												<p class="text text-m">
+													Настроен четкий график забора и доставки, внедрена
+													маркировка партий по корпусам. Бельё проходит раздельную
+													обработку и выглаживается на каландре — стало ровным и
+													готовым к службе без дополнительной подготовки. Отель
+													получил предсказуемые сроки и стабильное качество каждый
+													день.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<div class="grid-layout card-case-nav">
+								<div class="slider-fraction swiper-pagination-fraction swiper-pagination-horizontal">
+									<span class="swiper-pagination-current">1</span>
+									/
+									<span class="swiper-pagination-total">5</span>
+								</div>
+							</div>
+						</div>
+						<div class="card-case-wrapper">
+							<article class="card-case">
+								<div class="grid-layout card-case__grid">
+									<div class="card-case__gallery">
+										<img src="img/case.jpg" alt="image" />
+									</div>
+									<div class="card-case__body">
+										<div class="card-case__head">
+											<h3 class="f-title card-case__title">Park & House Hotel</h3>
+											<p class="text-m card-case__descr">
+												Отель на 150 номеров, ежедневная смена постельного и махрового
+												фонда
+											</p>
+										</div>
+										<div class="card-case__items">
+											<div class="card-case__item">
+												<div class="name text-b">Задача</div>
+												<p class="text text-m">
+													Обеспечить стабильную стирку и своевременную логистику,
+													исключив задержки и путаницу между корпусами и этажами.
+												</p>
+											</div>
+											<div class="card-case__item">
+												<div class="name text-b">Объем</div>
+												<p class="text text-m">
+													Около 600–700 кг белья в сутки: постельное, полотенца,
+													халаты.
+												</p>
+											</div>
+											<div class="card-case__item">
+												<div class="name text-b">Результат</div>
+												<p class="text text-m">
+													Настроен четкий график забора и доставки, внедрена
+													маркировка партий по корпусам. Бельё проходит раздельную
+													обработку и выглаживается на каландре — стало ровным и
+													готовым к службе без дополнительной подготовки. Отель
+													получил предсказуемые сроки и стабильное качество каждый
+													день.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<div class="grid-layout card-case-nav">
+								<div class="slider-fraction swiper-pagination-fraction swiper-pagination-horizontal">
+									<span class="swiper-pagination-current">2</span>
+									/
+									<span class="swiper-pagination-total">5</span>
+								</div>
+							</div>
+						</div>
+						<div class="card-case-wrapper">
+							<article class="card-case">
+								<div class="grid-layout card-case__grid">
+									<div class="card-case__gallery">
+										<img src="img/case.jpg" alt="image" />
+									</div>
+									<div class="card-case__body">
+										<div class="card-case__head">
+											<h3 class="f-title card-case__title">Park & House Hotel</h3>
+											<p class="text-m card-case__descr">
+												Отель на 150 номеров, ежедневная смена постельного и махрового
+												фонда
+											</p>
+										</div>
+										<div class="card-case__items">
+											<div class="card-case__item">
+												<div class="name text-b">Задача</div>
+												<p class="text text-m">
+													Обеспечить стабильную стирку и своевременную логистику,
+													исключив задержки и путаницу между корпусами и этажами.
+												</p>
+											</div>
+											<div class="card-case__item">
+												<div class="name text-b">Объем</div>
+												<p class="text text-m">
+													Около 600–700 кг белья в сутки: постельное, полотенца,
+													халаты.
+												</p>
+											</div>
+											<div class="card-case__item">
+												<div class="name text-b">Результат</div>
+												<p class="text text-m">
+													Настроен четкий график забора и доставки, внедрена
+													маркировка партий по корпусам. Бельё проходит раздельную
+													обработку и выглаживается на каландре — стало ровным и
+													готовым к службе без дополнительной подготовки. Отель
+													получил предсказуемые сроки и стабильное качество каждый
+													день.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<div class="grid-layout card-case-nav">
+								<div class="slider-fraction swiper-pagination-fraction swiper-pagination-horizontal">
+									<span class="swiper-pagination-current">3</span>
+									/
+									<span class="swiper-pagination-total">5</span>
+								</div>
+							</div>
+						</div>
+						<div class="card-case-wrapper">
+							<article class="card-case">
+								<div class="grid-layout card-case__grid">
+									<div class="card-case__gallery">
+										<img src="img/case.jpg" alt="image" />
+									</div>
+									<div class="card-case__body">
+										<div class="card-case__head">
+											<h3 class="f-title card-case__title">Park & House Hotel</h3>
+											<p class="text-m card-case__descr">
+												Отель на 150 номеров, ежедневная смена постельного и махрового
+												фонда
+											</p>
+										</div>
+										<div class="card-case__items">
+											<div class="card-case__item">
+												<div class="name text-b">Задача</div>
+												<p class="text text-m">
+													Обеспечить стабильную стирку и своевременную логистику,
+													исключив задержки и путаницу между корпусами и этажами.
+												</p>
+											</div>
+											<div class="card-case__item">
+												<div class="name text-b">Объем</div>
+												<p class="text text-m">
+													Около 600–700 кг белья в сутки: постельное, полотенца,
+													халаты.
+												</p>
+											</div>
+											<div class="card-case__item">
+												<div class="name text-b">Результат</div>
+												<p class="text text-m">
+													Настроен четкий график забора и доставки, внедрена
+													маркировка партий по корпусам. Бельё проходит раздельную
+													обработку и выглаживается на каландре — стало ровным и
+													готовым к службе без дополнительной подготовки. Отель
+													получил предсказуемые сроки и стабильное качество каждый
+													день.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<div class="grid-layout card-case-nav">
+								<div class="slider-fraction swiper-pagination-fraction swiper-pagination-horizontal">
+									<span class="swiper-pagination-current">4</span>
+									/
+									<span class="swiper-pagination-total">5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-da=".s-cases__container, 575" class="grid-layout s-cases__more-wrapper">
+						<div class="item-fake"></div>
+						<div class="btn-s s-cases__btn-more">Показать ещё</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-contacts sect-m">
+			<div class="container">
+				<div class="sect-head">
+					<div class="grid-layout sect-head__wrapper">
+						<div class="sect-head__subtitle">Контакты</div>
+						<h2 class="s-title">Как с нами связаться</h2>
+					</div>
+				</div>
+				<div class="grid-layout s-contacts__grid">
+					<div class="item-fake"></div>
+					<div class="s-contacts__main">
+						<div class="s-contacts__wrapper">
+							<div class="s-contacts__info-grid">
+								<div class="s-contacts__item">
+									<div class="text-m title">Мы находимся по адресу</div>
+									<div class="text-b val">г. Ессентуки, ул. Пятигорская, 149</div>
+								</div>
+								<div class="s-contacts__item">
+									<div class="text-m title">Работаем для вас</div>
+									<div class="text-b val">Пн-Пт: с 09.00 до 21.00</div>
+								</div>
+								<div class="s-contacts__item">
+									<div class="text-m title">Позвонить нам</div>
+									<a href="tel:+79255550126" class="text-b val">
+										+7 (925) 555-01-26
+									</a>
+								</div>
+								<div class="s-contacts__item">
+									<div class="text-m title">Написать нам</div>
+									<a href="mailto:chistoproff@bk.ru" class="text-b val">
+										chistoproff@bk.ru
+									</a>
+								</div>
+							</div>
+							<div class="social">
+								<a href="#" target="_blank" class="btn-r">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-max"></use>
+									</svg>
+								</a>
+								<a href="#" target="_blank" class="btn-r">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+									</svg>
+								</a>
+								<a href="#" target="_blank" class="btn-r _green-h">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="s-contacts__wrapper-map">
+							<div class="map s-contacts__map" data-center="[44.054931074607396,42.909915999999974]" data-zoom="16"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="grid-layout footer__wrapper">
+				<a href="/" class="footer__logo">
+					<img src="img/logo.svg" alt="image" />
+				</a>
+				<div class="footer__nav">
+					<div data-spollers="575,max" class="footer__nav-grid">
+						<div class="footer__nav-item">
+							<ul class="list footer__nav-list">
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Тестовая партия</a></li>
+								<li><a href="#">Логистика</a></li>
+								<li><a href="#">Партнерство</a></li>
+							</ul>
+						</div>
+						<div class="footer__nav-item _spoller">
+							<div data-spoller class="footer__nav-title">
+								<span>Услуги</span>
+								<div class="circle">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-next"></use>
+									</svg>
+								</div>
+							</div>
+							<div>
+								<ul class="list footer__nav-list">
+									<li><a href="#">Прямое бельё</a></li>
+									<li><a href="#">Махра</a></li>
+									<li><a href="#">Ресторанный текстиль</a></li>
+									<li><a href="#">Униформа</a></li>
+									<li><a href="#">MED/SPA SAFE</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__nav-item _spoller">
+							<div data-spoller class="footer__nav-title">
+								<span>Решения по отраслям</span>
+								<div class="circle">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-next"></use>
+									</svg>
+								</div>
+							</div>
+							<div>
+								<ul class="list footer__nav-list">
+									<li><a href="#">Для санаториев</a></li>
+									<li><a href="#">Для отелей</a></li>
+									<li><a href="#">Для SPA/фитнеса</a></li>
+									<li><a href="#">Для ресторанов/кейтеринга</a></li>
+									<li><a href="#">Для медицины</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div data-btn-up class="btn-c">
+						<div class="wrap">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-top"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom grid-layout">
+				<div class="item-fake"></div>
+				<div class="footer__bottom-main">
+					<ul class="list footer__bottom-list">
+						<li><a href="#">Политика конфиденциальности</a></li>
+						<li><a href="#">Политика обработки персональных данных</a></li>
+					</ul>
+					<a href="#" target="_blank" class="footer__dev">
+						<span>Создание сайта</span>
+						<img src="img/dev.svg" alt="image" />
+					</a>
+					<div data-btn-up class="btn-c">
+						<div class="wrap">
+							<svg>
+								<use xlink:href='img/icons/icons.svg#icon-arrow-top'></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./files/fancybox/fancybox.min.js?_v=20260304160402"></script>
+	<script src="./files/swiper/swiper.min.js?_v=20260304160402"></script>
+	<script src="./files/inputmask/inputmask.min.js?_v=20260304160402"></script>
+	<script src="js/app.min.js?_v=20260304160402"></script>
+</body>
+
+</html>

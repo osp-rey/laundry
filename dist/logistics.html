@@ -1,0 +1,794 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Чисто`PROFF</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap&_v=20260304160402" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20260304160402">
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20260304160402">
+	<link rel="stylesheet" href="css/style.min.css?_v=20260304160402" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a href="/" class="header__logo">
+					<img src="img/logo.svg" alt="logo" />
+				</a>
+				<div class="header__contacts">
+					<div class="header__contacts-main">
+						<div class="header__contacts-item">Пн-Пт: с 09.00 до 21.00</div>
+						<a href="#" target="_blank" class="header__contacts-item">
+							г. Ессентуки, ул. Пятигорская, 149
+						</a>
+					</div>
+					<div class="header__tel">
+						<div class="header__tel-title">Заказать звонок</div>
+						<a href="tel:+79255550126" class="header__tel-btn">
+							+7 (925) 555-01-26
+						</a>
+					</div>
+					<a href="#modal-feedback" data-fancybox data-target-note="#input-modal-feedback" data-note="Получить КП" class="btn-s header__btn">
+						Получить КП
+					</a>
+				</div>
+				<div class="header__mob-buttons">
+					<a href="tel:+79255550126" class="header__mob-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+						</svg>
+					</a>
+					<div class="header__mob-btn _burger" id="burger-toggle">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="header-b">
+		<div class="container">
+			<nav class="header-b__nav">
+				<ul class="list header-b__list">
+					<li class="menu-item-has-children">
+						<a href="#">Услуги</a>
+						<ul class="sub-menu">
+							<li><a href="#">Прямое бельё</a></li>
+							<li><a href="#">Махра</a></li>
+							<li><a href="#">Ресторанный текстиль </a></li>
+							<li><a href="#">Униформа</a></li>
+							<li><a href="#">MED/SPA SAFE</a></li>
+						</ul>
+					</li>
+					<li class="menu-item-has-children">
+						<a href="#">Решения по отраслям</a>
+						<ul class="sub-menu">
+							<li><a href="#">Прямое бельё</a></li>
+							<li><a href="#">Махра</a></li>
+							<li><a href="#">Ресторанный текстиль </a></li>
+							<li><a href="#">Униформа</a></li>
+							<li><a href="#">MED/SPA SAFE</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Тестовая партия</a></li>
+					<li><a href="#">Логистика</a></li>
+					<li><a href="#">Партнерство</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<aside>
+		<div class="modal" id="modal-feedback">
+			<div class="modal__inside">
+				<div class="modal__wrapper">
+					<div class="modal__close" data-fancybox-close>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+					</div>
+					<img src="img/modal-img.jpg" alt="image" class="modal__img" />
+					<div class="modal__body">
+						<div class="t-title modal__title">Оставьте ваши данные</div>
+						<form action="#" class="modal__form">
+							<div style="display: none;">
+								<input type="text" id="input-modal-feedback">
+							</div>
+							<div class="input-control">
+								<input type="text" placeholder="Название компании" class="input" />
+							</div>
+							<div class="input-control">
+								<input type="text" placeholder="Контактное лицо" class="input" />
+							</div>
+							<div class="input-control">
+								<input type="tel" placeholder="Номер телефона" class="input" />
+							</div>
+							<div class="input-control">
+								<input type="email" placeholder="Email" class="input" />
+							</div>
+							<button type="submit" class="btn-s">Отправить</button>
+							<div class="check-wrapper">
+								<span class="wpcf7-form-control-wrap" data-name="acceptance-84">
+									<span class="wpcf7-form-control wpcf7-acceptance">
+										<span class="wpcf7-list-item">
+											<label>
+												<input type="checkbox" name="acceptance-84" value="1" required aria-invalid="false" />
+												<span class="wpcf7-list-item-label">
+													<span>
+														Нажимая на кнопку «Отправить», подтверждаю своё
+														согласие с <a href="#" target="_blank">обработкой персональных данных</a> и
+														положениями <a href="#" target="_blank">Политики конфиденциальности</a>
+													</span>
+												</span>
+											</label>
+										</span>
+									</span>
+								</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	<aside>
+		<div class="burger" id="burger">
+			<div class="burger__body">
+				<div class="burger__wrapper-menu _active _show" id="burger-menu-start">
+					<ul class="list burger__list">
+						<li class="menu-item-has-children">
+							<a href="#">Услуги</a>
+							<ul class="sub-menu">
+								<li><a href="#">Прямое бельё</a></li>
+								<li><a href="#">Махра</a></li>
+								<li><a href="#">Ресторанный текстиль</a></li>
+								<li><a href="#">Униформа</a></li>
+								<li><a href="#">MED/SPA SAFE</a></li>
+							</ul>
+						</li>
+						<li class="menu-item-has-children">
+							<a href="#">Решения по отраслям</a>
+							<ul class="sub-menu">
+								<li><a href="#">Прямое бельё 2</a></li>
+								<li><a href="#">Махра 2</a></li>
+								<li><a href="#">Ресторанный текстиль 2</a></li>
+								<li><a href="#">Униформа 2</a></li>
+								<li><a href="#">MED/SPA SAFE 2</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Тестовая партия</a>
+						</li>
+						<li>
+							<a href="#">Логистика</a>
+						</li>
+						<li>
+							<a href="#">Партнерство</a>
+						</li>
+						<li>
+							<a href="#">О компании</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="burger__wrapper-menu" id="burger-menu-inside">
+					<div class="burger__prev-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+						</svg>
+						<span>Назад</span>
+					</div>
+				</div>
+				<div class="burger__info">
+					<a href="#" target="_blank" class="burger__info-item">
+						г. Ессентуки, ул. Пятигорская, 149
+					</a>
+					<div class="burger__info-item">Пн-Пт: с 09.00 до 21.00</div>
+				</div>
+				<div class="burger__buttons">
+					<a href="#modal-feedback" data-target-note="#input-modal-feedback" data-note="Заказать звонок" data-fancybox class="btn-s _white">
+						Заказать звонок
+					</a>
+					<a href="#modal-feedback" data-target-note="#input-modal-feedback" data-note="Получить КП" data-fancybox class="btn-s">
+						Получить КП
+					</a>
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	<main>
+
+		<div class="breadcrumbs">
+			<div class="container">
+				<div class="aioseo-breadcrumbs">
+					<span class="aioseo-breadcrumb">
+						<a href="#" title="Главная">Главная</a>
+					</span>
+					<span class="aioseo-breadcrumb-separator">—</span>
+					<span class="aioseo-breadcrumb">Логистика</span>
+				</div>
+			</div>
+		</div>
+
+		<section class="s-hero">
+			<div class="container">
+				<div class="s-hero__body _sanatorium">
+					<h1 class="m-title s-hero__title">
+						Логистика по КМВ —
+						<br />
+						<span>
+							регулярный вывоз
+							<br />
+							и доставка белья
+						</span>
+					</h1>
+					<p class="s-hero__content">
+						Пятигорск, Кисловодск, Ессентуки, Минеральные Воды и близлежащие районы
+					</p>
+					<div class="s-hero__buttons">
+						<a href="#modal-feedback" data-fancybox data-target-note="#input-modal-feedback" data-note="Стать партнером" class="btn-s">
+							Стать партнером
+						</a>
+						<a href="#modal-feedback" data-fancybox data-target-note="#input-modal-feedback" data-note="Получить КП" class="btn-s _white">
+							Получить КП
+						</a>
+					</div>
+					<picture class="s-hero__picture">
+						<img src="img/hero-logistics.png" alt="image" />
+					</picture>
+				</div>
+				<div class="s-hero__adv">
+					<div class="s-hero__adv-item">
+						<img src="img/hero-icon-1.svg" alt="image" class="icon" />
+						<span class="text-b">
+							Собственный
+							<br />
+							автопарк
+						</span>
+					</div>
+					<div class="s-hero__adv-item">
+						<img src="img/hero-icon-2.svg" alt="image" class="icon" />
+						<span class="text-b">
+							Четкие графики
+							<br />
+							без срывов
+						</span>
+					</div>
+					<div class="s-hero__adv-item">
+						<img src="img/hero-icon-3.svg" alt="image" class="icon" />
+						<span class="text-b">
+							Соблюдение
+							<br />
+							санитарных норм
+						</span>
+					</div>
+					<div class="s-hero__adv-item">
+						<img src="img/hero-icon-4.svg" alt="image" class="icon" />
+						<span class="text-b">
+							Работаем
+							<br />
+							по договору
+						</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-static sect-m">
+			<div class="container">
+				<div class="s-static__body">
+					<div class="s-static__info">
+						<h2 class="s-title s-static__title">
+							Организованный вывоз и доставка белья
+							<span>по графику</span>
+						</h2>
+						<div class="content s-static__content">
+							<p>
+								Мы организуем регулярный вывоз и доставку белья по городам
+								Кавказских Минеральных Вод. Работаем по согласованному графику,
+								учитывая объёмы и особенности каждого объекта.
+							</p>
+							<p>
+								Собственный автопарк и выстроенные маршруты позволяют соблюдать
+								сроки и санитарные требования. Грязное и чистое бельё перевозится
+								раздельно, в герметичной таре. Берем на себя весь логистический
+								процесс — от забора белья до доставки чистых комплектов, готовых к
+								использованию.
+							</p>
+						</div>
+						<div data-more-btn=".s-static__content" class="btn-simple">
+							<span>Показать весь текст</span>
+							<div class="circle">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-bottom"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<img src="img/static-logistics.jpg" alt="image" class="s-static__img" />
+				</div>
+			</div>
+		</section>
+
+		<section class="sect-m s-location">
+			<div class="container">
+				<div class="content-wrapper">
+					<div class="sect-head">
+						<div class="grid-layout sect-head__wrapper">
+							<div class="sect-head__subtitle">ГЕОГРАФИЯ</div>
+							<h2 class="s-title">
+								<span>Стабильная</span>
+								логистика
+								<br />
+								по региону КМВ
+							</h2>
+						</div>
+					</div>
+					<picture class="s-location__bg">
+						<source srcset="img/location-mob.jpg" media="(max-width: 575px)" />
+						<img src="img/location-img.png" alt="image" />
+					</picture>
+					<div class="s-location__grid grid-layout">
+						<div class="item-fake"></div>
+						<div class="s-location__main">
+							<div class="swiper s-location__slider">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="s-location__item">
+											<img src="img/check-bold.svg" alt="icon" class="icon" />
+											<div class="info">
+												<h3 class="text-b title">Покрытие региона</h3>
+												<p class="text-m descr">
+													Пятигорск, Кисловодск, Ессентуки, Железноводск,
+													Минеральные Воды
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="s-location__item">
+											<img src="img/check-bold.svg" alt="icon" class="icon" />
+											<div class="info">
+												<h3 class="text-b title">Собственный автопарк</h3>
+												<p class="text-m descr">
+													Спецтранспорт для безопасной перевозки чистого и грязного
+													белья
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="s-location__item">
+											<img src="img/check-bold.svg" alt="icon" class="icon" />
+											<div class="info">
+												<h3 class="text-b title">Ежедневные рейсы</h3>
+												<p class="text-m descr">
+													Регулярный забор и доставка белья + индивидуальные графики
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="s-location__item">
+											<img src="img/check-bold.svg" alt="icon" class="icon" />
+											<div class="info">
+												<h3 class="text-b title">Экспресс 24 часа</h3>
+												<p class="text-m descr">
+													Срочная обработка и возврат по запросу
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="s-location__row _head">
+								<div class="s-location__item">
+									<img src="img/check-bold.svg" alt="icon" class="icon" />
+									<div class="info">
+										<h3 class="text-b title">Покрытие региона</h3>
+										<p class="text-m descr">
+											Пятигорск, Кисловодск, Ессентуки, Железноводск, Минеральные
+											Воды
+										</p>
+									</div>
+								</div>
+								<div class="s-location__item">
+									<img src="img/check-bold.svg" alt="icon" class="icon" />
+									<div class="info">
+										<h3 class="text-b title">Собственный автопарк</h3>
+										<p class="text-m descr">
+											Спецтранспорт для безопасной перевозки чистого и грязного
+											белья
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="s-location__row _bottom">
+								<div class="s-location__item">
+									<img src="img/check-bold.svg" alt="icon" class="icon" />
+									<div class="info">
+										<h3 class="text-b title">Ежедневные рейсы</h3>
+										<p class="text-m descr">
+											Регулярный забор и доставка белья + индивидуальные графики
+										</p>
+									</div>
+								</div>
+								<div class="s-location__item">
+									<img src="img/check-bold.svg" alt="icon" class="icon" />
+									<div class="info">
+										<h3 class="text-b title">Экспресс 24 часа</h3>
+										<p class="text-m descr">
+											Срочная обработка и возврат по запросу
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-adv sect-m">
+			<div class="container">
+				<div class="content-wrapper _primary-m">
+					<div class="sect-head">
+						<div class="grid-layout sect-head__wrapper">
+							<div class="sect-head__subtitle">
+								СЕРВИС, КОТОРОМУ
+								<br />
+								МОЖНО ДОВЕРЯТЬ
+							</div>
+							<h2 class="s-title">
+								Преимущества, которые
+								<br />
+								делают нашу прачечную
+								<br />
+								<span>эффективным партнером</span>
+							</h2>
+						</div>
+					</div>
+					<div class="grid-layout s-adv__grid-layout">
+						<div class="s-adv__grid-item-fake"></div>
+						<div class="s-adv__main">
+							<div class="s-adv__slider swiper">
+								<div class="swiper-wrapper">
+									<article class="swiper-slide s-adv__slide">
+										<img src="img/logistics-adv-1.jpg" alt="image" class="s-adv__slide-img" />
+										<div class="s-adv__slide-body">
+											<div class="s-adv__slide-num">1</div>
+											<h3 class="text-b s-adv__slide-title">
+												Согласование графика
+											</h3>
+											<p class="text-m">
+												Подбираем удобный график вывоза и доставки с учётом объёмов
+												белья, режима работы объекта и сезонной загрузки
+											</p>
+										</div>
+									</article>
+									<article class="swiper-slide s-adv__slide">
+										<img src="img/logistics-adv-2.jpg" alt="image" class="s-adv__slide-img" />
+										<div class="s-adv__slide-body">
+											<div class="s-adv__slide-num">2</div>
+											<h3 class="text-b s-adv__slide-title">
+												Забор грязного белья
+											</h3>
+											<p class="text-m">
+												Наши сотрудники забирают бельё в согласованное время,
+												проводят первичную приёмку и маркировку партий.
+											</p>
+										</div>
+									</article>
+									<article class="swiper-slide s-adv__slide">
+										<img src="img/logistics-adv-3.jpg" alt="image" class="s-adv__slide-img" />
+										<div class="s-adv__slide-body">
+											<div class="s-adv__slide-num">3</div>
+											<h3 class="text-b s-adv__slide-title">
+												Транспортировка в герметичных контейнерах
+											</h3>
+											<p class="text-m">
+												Грязное белье перевозится в закрытой таре, исключающей
+												контакт с чистыми изделиями и внешней средой
+											</p>
+										</div>
+									</article>
+									<article class="swiper-slide s-adv__slide">
+										<img src="img/logistics-adv-4.jpg" alt="image" class="s-adv__slide-img" />
+										<div class="s-adv__slide-body">
+											<div class="s-adv__slide-num">3</div>
+											<h3 class="text-b s-adv__slide-title">Стирка и обработка</h3>
+											<p class="text-m">
+												Белье проходит профессиональную стирку, дезинфекцию, сушку и
+												глажение в соответствии с санитарными нормами
+											</p>
+										</div>
+									</article>
+									<article class="swiper-slide s-adv__slide">
+										<img src="img/logistics-adv-5.jpg" alt="image" class="s-adv__slide-img" />
+										<div class="s-adv__slide-body">
+											<div class="s-adv__slide-num">5</div>
+											<h3 class="text-b s-adv__slide-title">
+												Доставка чистого белья точно по времени
+											</h3>
+											<p class="text-m">
+												Чистое белье доставляется в согласованные сроки, аккуратно
+												упакованным и готовым к использованию
+											</p>
+										</div>
+									</article>
+								</div>
+							</div>
+							<div class="slider-arrows">
+								<div class="slider-arrow _prev">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-prev-arrow"></use>
+									</svg>
+								</div>
+								<div class="slider-arrow _next">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-next-arrow"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-overview sect-m">
+			<div class="container">
+				<div class="sect-head">
+					<div class="grid-layout sect-head__wrapper">
+						<div class="sect-head__subtitle">Наш автопарк</div>
+						<h2 class="s-title">
+							Располагаем всем необходимым для стабильного вывоза и доставки белья
+						</h2>
+					</div>
+				</div>
+				<div class="swiper s-overview__slider">
+					<div class="swiper-wrapper">
+						<a href="img/overview.jpg" data-fancybox="gallery-overview" class="swiper-slide s-overview__slide">
+							<img src="img/overview.jpg" alt="image" />
+						</a>
+						<a href="img/overview.jpg" data-fancybox="gallery-overview" class="swiper-slide s-overview__slide">
+							<img src="img/overview.jpg" alt="image" />
+						</a>
+						<a href="img/overview.jpg" data-fancybox="gallery-overview" class="swiper-slide s-overview__slide">
+							<img src="img/overview.jpg" alt="image" />
+						</a>
+						<a href="img/overview.jpg" data-fancybox="gallery-overview" class="swiper-slide s-overview__slide">
+							<img src="img/overview.jpg" alt="image" />
+						</a>
+						<a href="img/overview.jpg" data-fancybox="gallery-overview" class="swiper-slide s-overview__slide">
+							<img src="img/overview.jpg" alt="image" />
+						</a>
+						<a href="img/overview.jpg" data-fancybox="gallery-overview" class="swiper-slide s-overview__slide">
+							<img src="img/overview.jpg" alt="image" />
+						</a>
+						<a href="img/overview.jpg" data-fancybox="gallery-overview" class="swiper-slide s-overview__slide">
+							<img src="img/overview.jpg" alt="image" />
+						</a>
+						<a href="img/overview.jpg" data-fancybox="gallery-overview" class="swiper-slide s-overview__slide">
+							<img src="img/overview.jpg" alt="image" />
+						</a>
+						<a href="img/overview.jpg" data-fancybox="gallery-overview" class="swiper-slide s-overview__slide">
+							<img src="img/overview.jpg" alt="image" />
+						</a>
+					</div>
+				</div>
+				<div class="grid-layout">
+					<div class="item-fake"></div>
+					<div class="slider-arrows">
+						<div class="slider-arrow _prev _do">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-prev-arrow"></use>
+							</svg>
+						</div>
+						<div class="slider-arrow _next _do">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-next-arrow"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-selection sect-m">
+			<div class="container">
+				<div class="sect-head">
+					<div class="grid-layout sect-head__wrapper">
+						<div class="sect-head__subtitle">
+							<strong>Графики и частота доставки</strong>
+							тестового периода
+						</div>
+						<h2 class="s-title">
+							Подбираем
+							<span>удобный график</span>
+							вывоза и доставки белья с учетом режима работы объекта
+						</h2>
+					</div>
+				</div>
+				<div class="grid-layout">
+					<div class="item-fake"></div>
+					<div class="s-selection__slider swiper">
+						<div class="swiper-wrapper">
+							<article class="swiper-slide s-selection__slide">
+								<div class="s-selection__slide-body">
+									<div class="rect">
+										<img src="img/selection-icon.svg" alt="image" />
+									</div>
+									<h3 class="s-selection__slide-title">Ежедневная доставка</h3>
+									<p class="s-selection__slide-content">
+										Регулярный вывоз и доставка белья без накопления и задержек
+										<br />
+										<br />
+										<span>
+											<strong>Кому подходит:</strong>
+											объекты с высокой загрузкой и постоянным оборотом белья
+										</span>
+									</p>
+								</div>
+								<a href="#modal-feedback" data-fancybox data-target-note="#input-modal-feedback" data-note="Получить КП" class="btn-s">
+									Получить КП
+								</a>
+							</article>
+							<article class="swiper-slide s-selection__slide">
+								<div class="s-selection__slide-body">
+									<div class="rect">
+										<img src="img/selection-icon.svg" alt="image" />
+									</div>
+									<h3 class="s-selection__slide-title">Ежедневная доставка</h3>
+									<p class="s-selection__slide-content">
+										Регулярный вывоз и доставка белья без накопления и задержек
+										<br />
+										<br />
+										<span>
+											<strong>Кому подходит:</strong>
+											объекты с высокой загрузкой и постоянным оборотом белья
+										</span>
+									</p>
+								</div>
+								<a href="#modal-feedback" data-fancybox data-target-note="#input-modal-feedback" data-note="Получить КП" class="btn-s">
+									Получить КП
+								</a>
+							</article>
+							<article class="swiper-slide s-selection__slide">
+								<div class="s-selection__slide-body">
+									<div class="rect">
+										<img src="img/selection-icon.svg" alt="image" />
+									</div>
+									<h3 class="s-selection__slide-title">
+										Доставка 2–3 раза в неделю
+									</h3>
+									<p class="s-selection__slide-content">
+										Оптимальный график для средних объемов при стабильной работе
+										<br />
+										<br />
+										<span>
+											<strong>Кому подходит:</strong>
+											сезонные объекты и клиенты с нестандартными требованиями
+										</span>
+									</p>
+								</div>
+								<a href="#modal-feedback" data-fancybox data-target-note="#input-modal-feedback" data-note="Получить КП" class="btn-s">
+									Получить КП
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="grid-layout footer__wrapper">
+				<a href="/" class="footer__logo">
+					<img src="img/logo.svg" alt="image" />
+				</a>
+				<div class="footer__nav">
+					<div data-spollers="575,max" class="footer__nav-grid">
+						<div class="footer__nav-item">
+							<ul class="list footer__nav-list">
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Тестовая партия</a></li>
+								<li><a href="#">Логистика</a></li>
+								<li><a href="#">Партнерство</a></li>
+							</ul>
+						</div>
+						<div class="footer__nav-item _spoller">
+							<div data-spoller class="footer__nav-title">
+								<span>Услуги</span>
+								<div class="circle">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-next"></use>
+									</svg>
+								</div>
+							</div>
+							<div>
+								<ul class="list footer__nav-list">
+									<li><a href="#">Прямое бельё</a></li>
+									<li><a href="#">Махра</a></li>
+									<li><a href="#">Ресторанный текстиль</a></li>
+									<li><a href="#">Униформа</a></li>
+									<li><a href="#">MED/SPA SAFE</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__nav-item _spoller">
+							<div data-spoller class="footer__nav-title">
+								<span>Решения по отраслям</span>
+								<div class="circle">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-next"></use>
+									</svg>
+								</div>
+							</div>
+							<div>
+								<ul class="list footer__nav-list">
+									<li><a href="#">Для санаториев</a></li>
+									<li><a href="#">Для отелей</a></li>
+									<li><a href="#">Для SPA/фитнеса</a></li>
+									<li><a href="#">Для ресторанов/кейтеринга</a></li>
+									<li><a href="#">Для медицины</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div data-btn-up class="btn-c">
+						<div class="wrap">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-top"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom grid-layout">
+				<div class="item-fake"></div>
+				<div class="footer__bottom-main">
+					<ul class="list footer__bottom-list">
+						<li><a href="#">Политика конфиденциальности</a></li>
+						<li><a href="#">Политика обработки персональных данных</a></li>
+					</ul>
+					<a href="#" target="_blank" class="footer__dev">
+						<span>Создание сайта</span>
+						<img src="img/dev.svg" alt="image" />
+					</a>
+					<div data-btn-up class="btn-c">
+						<div class="wrap">
+							<svg>
+								<use xlink:href='img/icons/icons.svg#icon-arrow-top'></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./files/fancybox/fancybox.min.js?_v=20260304160402"></script>
+	<script src="./files/swiper/swiper.min.js?_v=20260304160402"></script>
+	<script src="./files/inputmask/inputmask.min.js?_v=20260304160402"></script>
+	<script src="js/app.min.js?_v=20260304160402"></script>
+</body>
+
+</html>
