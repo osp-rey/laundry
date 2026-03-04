@@ -22,12 +22,12 @@
   }
   &__item {
     box-sizing: border-box;
+    min-height: 350px;
 
     @include laptop-middle {
       width: 350px !important;
       max-width: 100%;
       height: auto !important;
-      min-height: 350px;
     }
     @include tablet {
       width: 290px !important;

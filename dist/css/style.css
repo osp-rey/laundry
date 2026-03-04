@@ -608,7 +608,7 @@ img {
   font-size: 20px;
   line-height: 120%;
   margin: 0;
-  max-width: 170px
+  max-width: 200px
 }
 .card-service__head .circle {
   display: flex;
@@ -1583,7 +1583,8 @@ img {
   gap: 20px
 }
 .s-steps__item {
-  box-sizing: border-box
+  box-sizing: border-box;
+  min-height: 350px
 }
 .s-steps__item._big {
   grid-column: 2 span
@@ -2107,6 +2108,12 @@ img {
   background-color: var(--gray-l);
   z-index: -1
 }
+.s-shape__content-wrapper-steps {
+  overflow: visible
+}
+.s-shape__content-wrapper-steps .s-shape__item-body .text {
+  max-width: 495px
+}
 .s-shape__wrapper {
   display: flex;
   align-items: flex-end;
@@ -2143,9 +2150,17 @@ img {
 .s-shape__item .rect._red {
   background: rgba(223,48,25,.2)
 }
+.s-shape__item .rect._primary-m {
+  background: var(--primary-m)
+}
 .s-shape__item .rect img {
   display: block;
   width: 20px
+}
+.s-shape__item .rect .num {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--primary)
 }
 .s-shape__item .descr {
   max-width: 435px
@@ -2582,8 +2597,7 @@ img {
   .s-steps__item {
     width: 350px!important;
     max-width: 100%;
-    height: auto!important;
-    min-height: 350px
+    height: auto!important
   }
   .s-steps__item._buttons,
   .s-steps__item._gallery {
@@ -2800,7 +2814,8 @@ img {
   }
   .s-static__info {
     flex: auto;
-    width: 100%
+    width: 100%;
+    padding-top: 25px
   }
   .s-static__title {
     margin-bottom: 30px
@@ -2891,6 +2906,9 @@ img {
   }
   .card-service__body {
     padding: 25px 20px
+  }
+  .card-service__head .title {
+    max-width: 170px
   }
   .card-offer__body {
     padding: 15px
