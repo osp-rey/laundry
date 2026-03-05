@@ -72,6 +72,23 @@
         }
       }
     }
+    &._logistics {
+      @include tablet {
+        min-height: 690px;
+      }
+    }
+    &._ba-none {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+    &._error {
+      @include tablet {
+        min-height: 600px;
+        padding-top: 140px;
+      }
+    }
   }
   &__title {
     margin-bottom: 20px;

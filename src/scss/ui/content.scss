@@ -1,5 +1,5 @@
-@use '../base/templates' as *;
-@use '../base/media' as *;
+@use "../base/templates" as *;
+@use "../base/media" as *;
 
 .content {
   font-size: 16px;
@@ -13,13 +13,33 @@
     font-weight: 500;
   }
 
+  h5 {
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    @include tablet {
+      font-size: 20px;
+    }
+    &:not(:first-child) {
+      margin-top: 60px;
+      @include laptop-min {
+        margin-top: 40px;
+      }
+    }
+    &:not(:last-child) {
+      @include tablet {
+        margin-bottom: 10px !important;
+      }
+    }
+  }
+
   p {
     margin: 0;
   }
 
   & > * {
     margin: 0;
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
     &:not(:last-child) {
       margin-bottom: 20px;
       @include tablet {

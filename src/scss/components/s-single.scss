@@ -1,0 +1,33 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-single {
+  &__title {
+    max-width: 605px;
+    margin-bottom: 50px;
+    @include laptop-min {
+      margin-bottom: 30px;
+    }
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+  &__content-wrapper {
+    @media (min-width: 1200px) {
+      padding-top: 100px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+  &__content {
+    max-width: 1000px;
+    p {
+      @media (min-width: 1200px) {
+        padding-left: 25px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

@@ -471,9 +471,13 @@
                     delay: 4e3
                 },
                 breakpoints: {
-                    768: {
+                    992: {
                         spaceBetween: 20,
                         slidesPerView: 3
+                    },
+                    768: {
+                        spaceBetween: 20,
+                        slidesPerView: "auto"
                     }
                 }
             });
