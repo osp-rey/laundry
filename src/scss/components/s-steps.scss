@@ -2,6 +2,11 @@
 @use "../base/media" as *;
 
 .s-steps {
+  .s-title {
+    &._middle {
+      max-width: 820px;
+    }
+  }
   &__slider {
     @include laptop-middle {
       overflow: visible !important;

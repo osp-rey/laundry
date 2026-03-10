@@ -117,12 +117,12 @@
         }
     }
     function headerScroll() {
-        const header = document.querySelector(".header");
+        const header = document.querySelector(".header-s");
         if (header) {
             let lastScrollTop = 0;
             window.addEventListener("scroll", () => {
                 let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                if (scrollTop > lastScrollTop && scrollTop > header.clientHeight) header.classList.add("_scroll"); else header.classList.remove("_scroll");
+                if (scrollTop > header.clientHeight * 2) header.classList.add("_scroll"); else header.classList.remove("_scroll");
                 lastScrollTop = scrollTop;
             });
         }
@@ -307,7 +307,8 @@
             const childrens = Array.from(container.children).filter(item => window.getComputedStyle(item).display === "none");
             const spanBtn = btn.querySelector("span");
             const startTextBTn = spanBtn.textContent;
-            if (childrens.length <= Array.from(container.children).length) btn.remove(); else btn.addEventListener("click", () => {
+            console.log(Array.from(container.children).length);
+            if (childrens.length >= Array.from(container.children).length) btn.remove(); else btn.addEventListener("click", () => {
                 if (!btn.classList.contains("_active")) {
                     btn.classList.add("_active");
                     spanBtn.textContent = "Свернуть текст";

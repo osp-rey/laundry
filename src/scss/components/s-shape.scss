@@ -8,15 +8,20 @@
     z-index: 1;
 
     &:first-child {
-      &::before {
-        position: absolute;
-        content: "";
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 30px;
-        background-color: var(--gray-l);
-        z-index: -1;
+      @media (min-width: 992px) {
+        &::before {
+          position: absolute;
+          content: "";
+          left: 0;
+          right: 0;
+          bottom: -30px;
+          height: 60px;
+          background-color: var(--gray-l);
+          z-index: -1;
+        }
+      }
+      @include laptop-min {
+        margin-bottom: 80px;
       }
     }
   }

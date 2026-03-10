@@ -8,6 +8,9 @@
   font-weight: 500;
   font-size: 16px;
 
+  @include laptop-min {
+    padding-left: 20px;
+  }
   @include tablet {
     margin: 10px 0px 15px 0px;
   }

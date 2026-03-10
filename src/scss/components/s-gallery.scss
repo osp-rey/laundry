@@ -3,6 +3,9 @@
 
 .s-gallery {
   overflow: hidden;
+  @include laptop-middle {
+    padding-left: 20px;
+  }
   &__slider {
     overflow: visible !important;
   }

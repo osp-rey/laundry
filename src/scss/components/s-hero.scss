@@ -11,10 +11,10 @@
     overflow: hidden;
     z-index: 1;
     @include laptop-min {
-      padding: 70px 30px 30px 30px;
+      padding: 70px 30px 300px 30px;
     }
     @include tablet {
-      padding: 70px 20px 20px 20px;
+      padding: 70px 20px 190px 20px;
       min-height: 660px;
     }
 
@@ -75,6 +75,14 @@
     &._logistics {
       @include tablet {
         min-height: 690px;
+      }
+    }
+    &._partners {
+      @include tablet {
+        padding-bottom: 380px;
+      }
+      @include tablet-min {
+        padding-bottom: 270px;
       }
     }
     &._ba-none {

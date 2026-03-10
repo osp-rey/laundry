@@ -3,6 +3,9 @@
 
 .s-reviews {
   overflow: hidden;
+  @include laptop-middle {
+    padding-left: 20px;
+  }
   &__grid {
     @include laptop-middle {
       display: block;

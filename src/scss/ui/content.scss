@@ -11,6 +11,9 @@
 
   strong {
     font-weight: 500;
+    @include tablet {
+      font-weight: 700;
+    }
   }
 
   h5 {
