@@ -11,9 +11,9 @@ export default function more() {
       const spanBtn = btn.querySelector("span");
       const startTextBTn = spanBtn.textContent;
 
-      console.log(Array.from(container.children).length)
+      console.log(childrens.length, Array.from(container.children).length)
 
-      if (childrens.length >= Array.from(container.children).length) {
+      if (childrens.length === 0) {
         btn.remove();
       } else {
         btn.addEventListener("click", () => {
